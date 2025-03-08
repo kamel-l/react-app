@@ -1,0 +1,281 @@
+{% extends "base.html" %}
+
+{% block title %}Nouvelle Recette - Faimily{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h1 class="mb-4">Nouvelle Recette</h1>
+            
+            {% if messages %}
+            <div class="messages">
+                {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">
+                    {{ message }}
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            <form method="POST" enctype="multipart/form-data" id="recipeForm" class="needs-validation" novalidate>
+                {% csrf_token %}
+                
+                <div class="mb-3">
+                    <label for="title" class="form-label">Titre de la recette*</label>
+                    <input type="text" class="form-control" id="title" name="name" 
+                           value="{{ form_data.title|default:'' }}" required>
+                    <div class="invalid-feedback">
+                        Veuillez entrer un titre pour votre recette
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description*</label>
+                    <textarea class="form-control" id="description" name="description" 
+                              rows="3" required>{{ form_data.description|default:'' }}</textarea>
+                    <div class="invalid-feedback">
+                        Veuillez entrer une description
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="prep_time" class="form-label">Temps de préparation (minutes)*</label>
+                            <input type="number" class="form-control" id="prep_time" name="prep_time" 
+                                   min="1" value="{{ form_data.prep_time|default:'' }}" required>
+                            <div class="invalid-feedback">
+                                Veuillez entrer un temps de préparation valide
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="cook_time" class="form-label">Temps de cuisson (minutes)*</label>
+                            <input type="number" class="form-control" id="cook_time" name="cook_time" 
+                                   min="0" value="{{ form_data.cook_time|default:'0' }}" required>
+                            <div class="invalid-feedback">
+                                Veuillez entrer un temps de cuisson valide
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="servings" class="form-label">Nombre de portions*</label>
+                            <input type="number" class="form-control" id="servings" name="servings" 
+                                   min="1" value="{{ form_data.servings|default:'' }}" required>
+                            <div class="invalid-feedback">
+                                Veuillez entrer un nombre de portions valide
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="image" class="form-label">Photo de la recette</label>
+                    <input type="file" class="form-control" id="image" name="image" accept="image/*">
+                    <div class="form-text">Format accepté : JPG, PNG (max 5Mo)</div>
+                </div>
+                <div class="mb-3">
+                    <label for="category" class="form-label">Catégorie*</label>
+                    <select class="form-select" id="category" name="category" required>
+                        <option value="">Choisir une catégorie</option>
+                        <option value="Starter" {% if form_data.category == 'Starter' %}selected{% endif %}>Starter</option>
+                        <option value="Main Course" {% if form_data.category == 'Main Course' %}selected{% endif %}>Main Course</option>
+                        <option value="Dessert" {% if form_data.category == 'Dessert' %}selected{% endif %}>Dessert</option>
+                        <option value="Snack" {% if form_data.category == 'Snack' %}selected{% endif %}>Snack</option>
+                        <option value="Other" {% if form_data.category == 'Other' %}selected{% endif %}>Other</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Veuillez sélectionner une catégorie
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Ingrédients*</label>
+                    <div id="ingredients-container">
+                        <div class="ingredient-row row mb-2">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="ingredient_name[]" 
+                                       placeholder="Nom de l'ingrédient" required>
+                                <div class="invalid-feedback">
+                                    Le nom de l'ingrédient est obligatoire
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" name="ingredient_quantity[]" 
+                                       placeholder="Quantité (optionnel)">
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-danger btn-sm" onclick="removeIngredient(this)">
+                                    Supprimer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-secondary btn-sm mt-2" onclick="addIngredient()">
+                        + Ajouter un ingrédient
+                    </button>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Instructions*</label>
+                    <div id="instructions-container">
+                        <div class="instruction-row row mb-2">
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" name="instructions[]" 
+                                       placeholder="Étape 1" required>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-danger btn-sm" onclick="removeInstruction(this)">
+                                    Supprimer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-secondary btn-sm mt-2" onclick="addInstruction()">
+                        + Ajouter une instruction
+                    </button>
+                </div>
+                <div class="mb-3">
+                    <label for="visibility" class="form-label">Visibilité de la recette*</label>
+                    <select class="form-select" id="visibility" name="visibility" required>
+                        <option value="private" {% if form_data.visibility == 'private' %}selected{% endif %}>
+                            Privé (uniquement visible pour moi)
+                        </option>
+                        <option value="public" {% if form_data.visibility == 'public' %}selected{% endif %}>
+                            Public (visible par tous)
+                        </option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Enregistrer la recette</button>
+                    <a href="{% url 'RecipesListsViews' %}" class="btn btn-outline-secondary">Annuler</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+(function () {
+    'use strict'
+    
+    const form = document.getElementById('recipeForm');
+    
+    form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        
+        // Vérification des ingrédients
+        const ingredients = document.querySelectorAll('[name="ingredient_name[]"]');
+        if (ingredients.length === 0) {
+            event.preventDefault();
+            alert('Veuillez ajouter au moins un ingrédient');
+            return;
+        }
+        
+        // Vérification des instructions
+        const instructions = document.querySelectorAll('[name="instructions[]"]');
+        if (instructions.length === 0) {
+            event.preventDefault();
+            alert('Veuillez ajouter au moins une instruction');
+            return;
+        }
+
+        form.classList.add('was-validated');
+    }, false);
+})();
+
+function addIngredient() {
+    const container = document.getElementById('ingredients-container');
+    const newRow = document.createElement('div');
+    newRow.className = 'ingredient-row row mb-2';
+    newRow.innerHTML = `
+        <div class="col-md-6">
+            <input type="text" class="form-control" name="ingredient_name[]" 
+                   placeholder="Nom de l'ingrédient" required>
+            <div class="invalid-feedback">
+                Le nom de l'ingrédient est obligatoire
+            </div>
+        </div>
+        <div class="col-md-4">
+            <input type="text" class="form-control" name="ingredient_quantity[]" 
+                   placeholder="Quantité (optionnel)">
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-danger btn-sm" onclick="removeIngredient(this)">
+                Supprimer
+            </button>
+        </div>
+    `;
+    container.appendChild(newRow);
+}
+
+function removeIngredient(button) {
+    const container = document.getElementById('ingredients-container');
+    const row = button.closest('.ingredient-row');
+    
+    // Empêcher la suppression s'il ne reste qu'un seul ingrédient
+    if (container.children.length > 1) {
+        row.remove();
+    } else {
+        alert('Vous devez avoir au moins un ingrédient');
+    }
+}
+
+function addInstruction() {
+    const container = document.getElementById('instructions-container');
+    const instructionCount = container.children.length + 1;
+    const newRow = document.createElement('div');
+    newRow.className = 'instruction-row row mb-2';
+    newRow.innerHTML = `
+        <div class="col-md-10">
+            <input type="text" class="form-control" name="instructions[]" 
+                   placeholder="Étape ${instructionCount}" required>
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-danger btn-sm" onclick="removeInstruction(this)">
+                Supprimer
+            </button>
+        </div>
+    `;
+    container.appendChild(newRow);
+}
+
+function removeInstruction(button) {
+    const container = document.getElementById('instructions-container');
+    const row = button.closest('.instruction-row');
+    
+    // Empêcher la suppression s'il ne reste qu'une seule instruction
+    if (container.children.length > 1) {
+        row.remove();
+    } else {
+        alert('Vous devez avoir au moins une instruction');
+    }
+}
+
+// Validation de l'image
+document.getElementById('image').addEventListener('change', function(e) {
+    const file = e.target.files[0];
+    if (file) {
+        if (file.size > 5 * 1024 * 1024) {
+            alert('La taille de l\'image ne doit pas dépasser 5Mo');
+            this.value = '';
+        }
+        
+        const validTypes = ['image/jpeg', 'image/png'];
+        if (!validTypes.includes(file.type)) {
+            alert('Seuls les formats JPG et PNG sont acceptés');
+            this.value = '';
+        }
+    }
+});
+</script>
+{% endblock %}

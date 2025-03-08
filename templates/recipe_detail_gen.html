@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container my-5">
+    {% if error %}
+        <div class="alert alert-danger">{{ error }}</div>
+    {% else %}
+        <h1 class="text-center">{{ recipe.title }}</h1>
+        <img src="{{ recipe.image }}" class="img-fluid rounded mx-auto d-block" alt="{{ recipe.title }}">
+
+        <h3>Ingredients</h3>
+        <ul>
+            {% for ingredient in recipe.extendedIngredients %}
+                <li>{{ ingredient.original }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Instructions</h3>
+        <p>{{ recipe.instructions | safe }}</p>
+
+        <a href="{{ recipe.sourceUrl }}" class="btn btn-primary" target="_blank">Voir la recette originale</a>
+    {% endif %}
+</div>
+{% endblock %}

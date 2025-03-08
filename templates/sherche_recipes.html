@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="mt-4">
+    <a href="{% url 'recipe_generator' %}" class="btn btn-secondary">Try Different Ingredients</a>
+</div>
+<div class="container">
+    <h2 class="mb-4">Recipe Results</h2>
+    {% if recipes %}
+        <div class="row">
+            {% for recipe in recipes %}
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 d-flex flex-column">
+                        {% if recipe.image %}
+                            <img src="{{ recipe.image.url }}" class="card-img-top" alt="{{ recipe.title }}">
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title">{{ recipe.title }}</h5>
+                            <p class="card-text">{{ recipe.description|truncatewords:20 }}</p>
+                            <div class "mt-auto">
+                            <a href="{% url 'RecipeDetailView' recipe.pk %}" class="btn btn-primary">View Recipe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="alert alert-info">
+            No recipes found with these ingredients. Try different combinations!
+        </div>
+    {% endif %}
+    
+    
+</div>
+{% endblock %}

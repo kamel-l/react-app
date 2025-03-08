@@ -1,0 +1,525 @@
+{% extends "base.html" %}
+
+{% block title %}Profil de {{ profile.user.username }} - Faimily{% endblock %}
+
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil de {{ profile.user.username }} - Faimily</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .profile-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .profile-bio {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+
+        .profile-stats {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .profile-stats i {
+            margin-right: 8px;
+        }
+
+        .list-group-item {
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .list-group-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #0d6efd, #0a58ca);
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(13, 110, 253, 0.15);
+        }
+
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1050;
+        }
+        #show-comments-btn {
+            margin-bottom: 20px;
+        }
+    
+        #comments-section {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color:rgb(251, 247, 247);
+        }
+    
+        #comments-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    
+        #comments-section li {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+    
+        #comments-section li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<div class="container py-5">
+    <div class="row">
+        <!-- Section profil -->
+        <div class="col-md-4">
+            <div class="card profile-card">
+                <div class="card-body text-center">
+                    <div class="position-relative mb-4">
+                        {% if profile.photo %}
+                        <img src="{{ profile.photo.url }}" alt="Photo de profil" class="profile-image">
+                        {% else %}
+                        <img src="/media/profile_photos/man.png" alt="Photo par défaut" class="profile-image">
+                        {% endif %}
+                        <button class="btn btn-sm btn-primary position-absolute bottom-0 end-0 rounded-circle"
+                                data-bs-toggle="modal" 
+                                data-bs-target="#photoModal">
+                                <i class="fas fa-camera"></i>
+                        </button>
+                    </div>
+                    <h3 class="fw-bold mb-1">{{ profile.user.username }}</h3>
+                    <p class="profile-bio mb-3">Membre depuis {{ profile.user.date_joined|date:"F Y" }}</p>
+                    
+                    {% if profile.bio %}
+                        <p class="card-text">{{ profile.bio }}</p>
+                    {% endif %}
+
+                    {% if is_own_profile %}
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editProfileModal">
+                            Modifier le profil
+                        </button>
+                        <a href="#"  id = "show-comments-btn" class=" commentaire-view btn btn-secondary" >
+                            <i class="fas fa-bell"></i> View Comments
+                        </a>
+                       
+                    {% endif %}
+                </div>
+                
+                <ul class="list-group list-group-flush">
+                    {% if profile.ville %}
+                        <li class="list-group-item">
+                            <i class="fas fa-map-marker-alt"></i> {{ profile.ville }}
+                        </li>
+                    {% endif %}
+                    {% if profile.date_naissance %}
+                        <li class="list-group-item">
+                            <i class="fas fa-birthday-cake"></i> {{ profile.date_naissance|date:"d F Y" }}
+                        </li>
+                    {% endif %}
+                    <li class="list-group-item">
+                        <i class="fas fa-book-open"></i> {{ stats.total_recettes }} recettes publiées
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-eye"></i> Total des vues : {{ stats.total_vues }}
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-eye"></i> Moyenne des vues : {{ stats.moyenne_vues_par_recette }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Statistiques détaillées -->
+        <div class="col-md-8">
+            <!-- Recette la plus vue -->
+            {% if stats.recette_plus_vue %}
+            <div class="card profile-card mb-3">
+                <div class="card-header">
+                    <h4>Recette la plus populaire</h4>
+                </div>
+                <div class="alert alert-info d-flex justify-content-between align-items-center card-body">
+                    <h5>{{ stats.recette_plus_vue.name }}</h5>
+                    <p>{{ stats.recette_plus_vue.vues }} vues</p>
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- Section pour afficher les Notifications (initialement cachée) -->
+
+        {% if notifications %}
+    <div class="card profile-card mb-3">
+        <div class="card-header"></div>
+        <div class="card-body" style="overflow-y: auto; max-height: 60vh;">
+            <button id="mark-all-read" class="btn btn-primary mb-2">Mark All as Read</button>
+            <ul class="list-group notification-list">
+                {% for notification in notifications %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center notification-item {% if not notification.is_read %}unread{% endif %}" 
+                        data-id="{{ notification.id }}">
+                        <div>
+                            <span class="icon">🔔</span>
+                            <a href="#" class="alert alert-info d-flex justify-content-between align-items-center view-comment" 
+                               data-notification-id="{{ notification.id }}" data-bs-toggle="modal" data-bs-target="#commentViewModal">
+                                {{ notification.message }}
+                            </a>
+                            <small class="text-muted d-block">{{ notification.created_at }}</small>
+                        </div>
+                        {% if not notification.is_read %}
+                            <button class="btn btn-sm btn-outline-secondary mark-as-read" 
+                                    data-notification-id="{{ notification.id }}">✔</button>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% else %}
+<div class="card profile-card mb-3">
+    <div class="card-header">Not Notifications</div>
+    <div class="card-body" style="overflow-y: auto; max-height: 60vh;"></div>
+</div>
+{% endif %}
+
+            <!-- Statistiques par catégorie -->
+            <div class="card profile-card mb-3">
+                <div class="card-header">
+                    <h4>Statistiques par catégorie</h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Catégorie</th>
+                                    <th>Nombre de recettes</th>
+                                    <th>Total des vues</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for cat in stats.recettes_par_categorie %}
+                                <tr>
+                                    <td>{{ cat.category }}</td>
+                                    <td>{{ cat.count }}</td>
+                                    <td>{{ cat.total_vues }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Classement global -->
+            <div class="card profile-card">
+                <div class="card-header">
+                    <h4>Top 10 des recettes les plus vues</h4>
+                </div>
+                <div class="card-body" style="overflow-y: auto; max-height: 60vh;">
+                    <div class="list-group" >
+                        {% for recipe in classement_global %}
+                        <a href="{% url 'RecipeDetailView' recipe.pk %}" class="list-group-item list-group-item-action">
+                            <div class="alert alert-info d-flex justify-content-between align-items-center d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">{{ recipe.name }}</h5>
+                                <small>Par {{ recipe.created_by.username }}</small>
+                                <small>{{ recipe.vues }} vues</small>
+                            </div>
+                           
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de modification du profil -->
+{% if is_own_profile %}
+<div class="modal fade" id="editProfileModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modifier mon profil</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="modal-body">
+                    {% for field in form %}
+                        <div class="mb-3">
+                            <label for="{{ field.id_for_label }}" class="form-label">
+                                {{ field.label }}
+                            </label>
+                            {{ field }}
+                            {% if field.errors %}
+                                <div class="invalid-feedback">
+                                    {{ field.errors|join:", " }}
+                                </div>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    <button type="submit" class="btn btn-primary">Enregistrer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<!-- Photo Upload Modal -->
+<div class="modal fade" id="photoModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modifier la photo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label class="form-label">Nouvelle photo</label>
+                        <input type="file" class="form-control" name="photo" accept="image/*">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Sauvegarder</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Comments Modal -->
+<div class="modal fade" id="planningModal" tabindex="-1" aria-labelledby="planningModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">tous comment</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" style="overflow-y: auto; max-height: 60vh;"> <!-- Contenu défilant -->
+                <div class="col-md-8" id="comment-text" name="comment-text">
+                    <!-- Recette la plus vue -->
+                    {% for comment in comments %}
+                    <div class="card profile-card mb-3">
+                        <div class="card-header">
+                            <h4>{{ comment.user.username }}</h4> <small class="text-muted">{{ comment.created_at|date:"j F" }}</small> 
+                        </div>
+                        <div class="card-body">
+                            <input type="hidden" id="comment-text" name="comment-text">
+                            <p>{{ comment.text }} </p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="modal-footer" style="position: sticky; bottom: 0; background-color: white; z-index: 1;"> <!-- Bouton fixe -->
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Update comment view modal -->
+<div class="modal fade" id="commentViewModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Comment Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <strong id="comment-user"></strong>
+                            <small id="comment-date" class="text-muted"></small>
+                        </div>
+                        <div class="mt-2">
+                            <small class="text-muted" id="comment-recipe"></small>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text" id="comments-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<style>
+   
+.notification-list { list-style: none; padding: 0; }
+.notification-item { padding: 10px; border-bottom: 1px solid #ccc; display: flex; align-items: center; justify-content: space-between; }
+.unread { font-weight: bold; background-color: #f8f9fa; }
+.icon { margin-right: 10px; }
+.mark-as-read { cursor: pointer; background: none; border: none; font-size: 16px; }
+#mark-all-read { margin-bottom: 10px; cursor: pointer; padding: 5px 10px; background: #007bff; color: white; border: none; border-radius: 5px; }
+
+    
+</style>
+<!-- filepath: /c:/Users/kamel/PycharmProjects/faimilyapp/templates/profile.html -->
+<script>
+    document.querySelectorAll('.mark-as-read').forEach(button => {
+        button.addEventListener('click', async function(e) {
+            e.preventDefault();
+            const notificationId = this.dataset.notificationId;
+            
+            try {
+                const response = await fetch(`/notifications/mark-as-read/${notificationId}/`, {
+                    method: 'POST',
+                    headers: {
+                        'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value,
+                        'Content-Type': 'application/json'
+                    }
+                });
+                
+                const data = await response.json();
+                if (data.success) {
+                    const notificationItem = this.closest('.notification-item');
+                    notificationItem.classList.remove('unread');
+                    this.remove();
+                } else {
+                    throw new Error(data.error || 'Failed to mark as read');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error marking notification as read');
+            }
+        });
+    });
+    
+    document.getElementById('mark-all-read')?.addEventListener('click', async function(e) {
+        e.preventDefault();
+        
+        try {
+            const response = await fetch('/recipe/notifications/mark-all-read/', {
+                method: 'POST',
+                headers: {
+                    'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value,
+                    'Content-Type': 'application/json'
+                }
+            });
+            
+            const data = await response.json();
+            if (data.success) {
+                document.querySelectorAll('.notification-item.unread').forEach(item => {
+                    item.classList.remove('unread');
+                    item.querySelector('.mark-as-read')?.remove();
+                });
+            } else {
+                throw new Error(data.error || 'Failed to mark all as read');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Error marking all notifications as read');
+        }
+    });
+
+
+    // Update JavaScript in profile.html
+    document.querySelectorAll('.view-comment').forEach(link => {
+        link.addEventListener('click', async function (e) {
+            e.preventDefault();
+            const notificationId = this.dataset.notificationId;
+            const modal = document.getElementById('commentViewModal');
+    
+            try {
+                // Récupérer le commentaire via AJAX
+                const response = await fetch(`/notifications/comment/${notificationId}/`);
+                const data = await response.json();
+    
+                if (!response.ok) {
+                    throw new Error(data.error || 'Erreur lors du chargement du commentaire');
+                }
+    
+                if (data.success) {
+                    // Mise à jour des éléments du modal
+                    document.getElementById('comment-user').textContent = data.comment.user;
+                    document.getElementById('comment-date').textContent = data.comment.created_at;
+                    document.getElementById('comment-recipe').textContent = `Recette : ${data.comment.recipe}`;
+                    document.getElementById('comments-text').textContent = data.comment.text;
+    
+                    // Affichage du modal Bootstrap
+                    const modalInstance = new bootstrap.Modal(modal);
+                    modalInstance.show();
+    
+                    // Marquer la notification comme lue sans rafraîchir la page
+                    const notificationItem = this.closest('.notification-item');
+                    if (notificationItem?.classList.contains('unread')) {
+                        await fetch(`/notifications/mark-as-read/${notificationId}/`, {
+                            method: 'POST',
+                            headers: {
+                                'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value
+                            }
+                        });
+    
+                        // Mise à jour dynamique : retirer la classe "unread" et supprimer le bouton de marquage
+                        notificationItem.classList.remove('unread');
+                        const markAsReadBtn = notificationItem.querySelector('.mark-as-read');
+                        if (markAsReadBtn) markAsReadBtn.remove();
+                    }
+                }
+            } catch (error) {
+                console.error('Erreur:', error);
+                alert(`Erreur lors du chargement du commentaire: ${error.message}`);
+            }
+        });
+    });
+    
+
+    
+   
+document.querySelectorAll('.commentaire-view').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const commentId = this.dataset.commentId;
+            document.getElementById('comment-text').value = commentId;
+            const planningModal = new bootstrap.Modal(document.getElementById('planningModal'));
+            planningModal.show();
+        });
+    });
+
+
+</script>
+{% endblock %}

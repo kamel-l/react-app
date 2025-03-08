@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Your Notifications</h1>
+
+
+<ul>
+    {% for notification in notifications %}
+        <li>
+            <a href="{{ notification.link }}">{{ notification.message }}</a>
+            <small>{{ notification.created_at }}</small>
+            {% if not notification.is_read %}
+                <button class="mark-as-read" data-notification-id="{{ notification.id }}">Mark as read</button>
+            {% endif %}
+        </li>
+    {% empty %}
+        <li>No notifications.</li>
+    {% endfor %}
+</ul>
+
+<!-- Bouton pour afficher tous les commentaires -->
+<button id="show-comments-btn" class="btn btn-primary">
+    Afficher tous les commentaires
+</button>
+
+<!-- Section pour afficher les commentaires (initialement cachée) -->
+<div id="comments-section" style="display: none;">
+    <h2>Commentaires</h2>
+    <ul>
+        {% for comment in comments %}
+            <li>
+                <strong>{{ comment.user.username }}</strong> ({{ comment.created_at }}):
+                <p>{{ comment.text }}</p>
+            </li>
+        {% empty %}
+            <li>Aucun commentaire pour le moment.</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<style>
+    #show-comments-btn {
+        margin-bottom: 20px;
+    }
+
+    #comments-section {
+        margin-top: 20px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    #comments-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #comments-section li {
+        margin-bottom: 15px;
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+    }
+
+    #comments-section li:last-child {
+        border-bottom: none;
+    }
+</style>
+
+<!-- Script pour gérer l'affichage des commentaires -->
+<script>
+    document.getElementById('show-comments-btn').addEventListener('click', function() {
+        const commentsSection = document.getElementById('comments-section');
+        if (commentsSection.style.display === 'none') {
+            commentsSection.style.display = 'block';
+            this.textContent = 'Masquer les commentaires';
+        } else {
+            commentsSection.style.display = 'none';
+            this.textContent = 'Afficher tous les commentaires';
+        }
+    });
+</script>
+
+<script>
+document.querySelectorAll('.mark-as-read').forEach(button => {
+    button.addEventListener('click', function() {
+        const notificationId = this.dataset.notificationId;
+        
+        fetch(`/notifications/mark-as-read/${notificationId}/`, {
+            method: 'POST',
+            headers: {
+                'X-CSRFToken': '{{ csrf_token }}',
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                this.parentElement.classList.add('read');
+                this.remove();
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+});
+</script>
+{% endblock %}

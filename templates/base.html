@@ -1,0 +1,375 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}FaimilyMeal{% endblock %}</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #FF6B6B;
+            --secondary-color: #4ECDC4;
+            --accent-color: #FFD93D;
+            --text-dark: #2C3E50;
+            --background-light: #FFF5E6;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            padding-top: 76px; /* Height of navbar + extra padding */
+        }
+
+        .navbar {
+            background-color: rgba(148, 208, 35, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white !important;
+        }
+
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-link:hover {
+            transform: translateY(-2px);
+            color: var(--accent-color) !important;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            flex-shrink: 0;
+            background-color: rgba(182, 241, 71, 0.98);
+            width: 100%;
+            padding: 2rem 0;
+            margin-top: auto;
+        }
+
+        .social-icons a {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        .content-wrapper {
+            flex: 1 0 auto;
+            width: 100%;
+            padding-bottom: 2rem;
+        }
+
+        .alert {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .badge {
+            margin-left: 5px;
+            font-size: 0.8rem;
+            padding: 0.25em 0.6em;
+        }
+        .comments-section {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    
+        #comments-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    
+        #comments-text{
+            background-color: rgba(148, 208, 35, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+    
+        #comments-text li:last-child {
+            border-bottom: none;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        {% if messages %}
+        <div class="container mt-4">
+            {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <i class="bi bi-house-door"></i> FamilyMeal
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    {% if user.is_authenticated %}
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.resolver_match.url_name == 'mealplanner' %}active{% endif %}" 
+                               href="{% url 'mealplanner' %}">
+                               <i class="bi bi-calendar-check"></i> Planner
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.resolver_match.url_name == 'shopping' %}active{% endif %}" 
+                               href="{% url 'shopping' %}">
+                               <i class="bi bi-cart"></i> Shopping
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.resolver_match.url_name == 'RecipesListsViews' %}active{% endif %}" 
+                               href="{% url 'RecipesListsViews' %}">
+                               <i class="bi bi-book"></i> Recipes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.resolver_match.url_name == 'my_recipes' %}active{% endif %}" 
+                               href="{% url 'my_recipes' %}">
+                               <i class="bi bi-collection"></i> My Recipes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.resolver_match.url_name == 'Sherche_recipes' %}active{% endif %}" 
+                               href="{% url 'recipe_search' %}">
+                               <i class="bi bi-search"></i> Create Recipes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.resolver_match.url_name == 'own_profile' %}active{% endif %}" 
+                               href="{% url 'own_profile' %}">
+                               <i class="bi bi-person"></i> Profile
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#commentsModal">
+                                <i class="bi bi-chat"></i> Comments
+                                <span class="badge bg-danger" id="comment-count">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        
+                            <a href="{% url 'notifications' %}">
+                                <i class='bx bxs-bell'></i>not
+                            </a>
+                                                                
+                        
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-danger" href="{% url 'logout' %}">
+                                <i class="bi bi-box-arrow-right"></i> Logout
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    {% else %}
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'login' %}">
+                                <i class="bi bi-box-arrow-in-right"></i> Login
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'user_signup' %}">
+                                <i class="bi bi-person-plus"></i> Register
+                            </a>
+                        </li>
+                    </ul>
+                    {% endif %}
+                </div>
+            </div>
+        </nav>
+
+         <!-- model for notification -->
+    <div class="card profile-card mb-3 modal fade" id ="notification-card" >
+        <div class="card-header">Notifications</div>
+        <div class="card-body" id ="notification-card" style="overflow-y: auto; max-height: 60vh;">
+            <button id="mark-all-read" class="btn btn-primary mb-2">Mark All as Read</button>
+            <ul class="list-group notification-list" id = "notification-list">
+                <!-- In profile.html -->
+                    {% for notification in notifications %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center notification-item {% if not notification.is_read %}unread{% endif %}" 
+                        data-id="{{ notification.id }}">
+                        <div>
+                            <span class="icon">🔔</span>
+                            <a href="#" class="alert alert-info d-flex justify-content-between align-items-center view-comment" 
+                            data-notification-id="{{ notification.id }}" data-bs-toggle="modal" data-bs-target="#commentViewModal">
+                                {{ notification.message }}
+                            </a>
+                            <small class="text-muted d-block">{{ notification.created_at }}</small>
+                        </div>
+                        {% if not notification.is_read %}
+                        <button class="btn btn-sm btn-outline-secondary mark-as-read" 
+                                data-notification-id="{{ notification.id }}">✔</button>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal pour afficher les commentaires -->
+    <div class="modal fade" id="commentsModal" tabindex="-1" aria-labelledby="commentsModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Commentaires sur vos recettes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" style="overflow-y: auto; max-height: 60vh;"> <!-- Contenu défilant -->
+                    <div class="col-md-8" id="comment-text" name="comment-text">
+                            <ul id="comments-list" class="list-group">
+                                <!-- Les commentaires seront injectés ici via JavaScript -->
+                            </ul>
+                    </div>
+                </div>
+                <div class="modal-footer" style="position: sticky; bottom: 0; background-color: white; z-index: 1;"> <!-- Bouton fixe -->
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+        <main class="container my-5">
+            {% block content %}
+            {% endblock %}
+        </main>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Fonction pour récupérer les commentaires et mettre à jour le badge
+                async function fetchUserRecipeComments() {
+                    try {
+                        // Récupérer les commentaires via l'API
+                        const response = await fetch('/api/user-recipe-comments/');
+                        const data = await response.json();
+        
+                        if (data.success) {
+                            // Mettre à jour le badge avec le nombre de commentaires non lus
+                            document.getElementById('comment-count').textContent = data.unread_count;
+        
+                            // Mettre à jour la liste des commentaires dans le modal (si le modal est ouvert)
+                            const commentsList = document.getElementById('comments-list');
+                            if (commentsList) {
+                                commentsList.innerHTML = ''; // Vider la liste actuelle
+        
+                                // Ajouter chaque commentaire à la liste
+                                data.comments.forEach(comment => {
+                                    const commentItem = document.createElement('li');
+                                    commentItem.className = 'list-group-item';
+                                    commentItem.innerHTML = `
+                                        <strong>${comment.user}</strong> a commenté sur <em>${comment.recipe}</em> :
+                                        <p class="comment-text">${comment.text}</p>
+                                        <small class="text-muted">${comment.created_at}</small>
+                                    `;
+                                    commentsList.appendChild(commentItem);
+                                });
+                            }
+                        } else {
+                            // Si la requête échoue, afficher un message d'erreur
+                            console.error('Erreur lors du chargement des commentaires:', data.error);
+                        }
+                    } catch (error) {
+                        console.error('Erreur lors du chargement des commentaires:', error);
+                    }
+                }
+        
+                // Appeler la fonction au chargement de la page
+                fetchUserRecipeComments();
+        
+                // Optionnel : Rafraîchir les commentaires toutes les 5 minutes
+                setInterval(fetchUserRecipeComments, 300000);
+        
+                // Écouter l'événement d'ouverture du modal
+                const commentsModal = document.getElementById('commentsModal');
+                if (commentsModal) {
+                    commentsModal.addEventListener('show.bs.modal', fetchUserRecipeComments);
+                }
+            });
+
+            document.querySelectorAll('.notification-view').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const commentId = this.dataset.commentId;
+                    document.getElementById('notification-list').value = commentId;
+                    const planningModal = new bootstrap.Modal(document.getElementById('notification-card'));
+                    planningModal.show();
+                });
+            });
+        </script>
+    <footer>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <p>&copy; 2024 FamilyMeal. All rights reserved.</p>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">About Us</a></li>
+                        <li><a href="#" class="text-light">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="social-icons">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block title %}{{ recipe.title }} - Faimily{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="mb-0">{{ recipe.title }}</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <p><strong>Temps de préparation :</strong> {{ recipe.prep_time }} min</p>
+                        </div>
+                        <div class="col-md-4">
+                            <p><strong>Temps de cuisson :</strong> {{ recipe.cook_time }} min</p>
+                        </div>
+                        <div class="col-md-4">
+                            <p><strong>Portions :</strong> {{ recipe.servings }}</p>
+                        </div>
+                    </div>
+
+                    {% if recipe.description %}
+                    <div class="mb-4">
+                        <h4>Description</h4>
+                        <p>{{ recipe.description }}</p>
+                    </div>
+                    {% endif %}
+
+                    <div class="mb-4">
+                        <h4>Ingrédients</h4>
+                        <ul class="list-group">
+                            {% for ingredient in ingredients %}
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                {{ ingredient.name }}
+                                <span class="badge bg-primary rounded-pill">
+                                    {{ ingredient.quantity }} {{ ingredient.unit }}
+                                </span>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    {% if recipe.instructions %}
+                    <div class="mb-4">
+                        <h4>Instructions</h4>
+                        <div class="instructions">
+                            {{ recipe.instructions|nl2br|safe }}
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="card-footer">
+                    <a href="{{ url_for('shopping_list') }}" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Retour à la liste
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.instructions {
+    white-space: pre-wrap;
+    line-height: 1.6;
+}
+
+.badge {
+    font-size: 0.9em;
+}
+
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card-header {
+    background: linear-gradient(45deg, #3498db, #2980b9);
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+</style>
+{% endblock %}

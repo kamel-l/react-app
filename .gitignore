@@ -1,0 +1,28 @@
+# Fichiers de cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environnement virtuel
+venv/
+env/
+.venv/
+
+# Fichiers de base de données
+*.sqlite3
+*.db
+
+# Fichiers de configuration sensible
+.env
+.env.local
+.env.*.local
+
+# Fichiers de développement
+.vscode/
+.idea/
+.DS_Store
+
+# Fichiers statiques et médias
+/static/
+/media/

@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block title %}Inscription - FamilyMeal{% endblock %}
+
+{% block content %}
+<div class="min-vh-100 d-flex align-items-center py-5" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card border-0 shadow-lg rounded-3">
+                    <div class="card-header text-center bg-white border-0 py-4">
+                        <h2 class="fw-bold">Créer un compte</h2>
+                    </div>
+                    <div class="card-body p-5">
+                        <form method="post">
+                            {% csrf_token %}
+                            {% if form.errors %}
+                            <div class="alert alert-danger">
+                                {% for field in form %}
+                                    {% for error in field.errors %}
+                                        <p>{{ error }}</p>
+                                    {% endfor %}
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="{{ form.username.id_for_label }}" name="{{ form.username.name }}" required>
+                                <label for="{{ form.username.id_for_label }}">Nom d'utilisateur</label>
+                                {% if form.username.errors %}
+                                <div class="invalid-feedback">{{ form.username.errors }}</div>
+                                {% endif %}
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="{{ form.email.id_for_label }}" name="{{ form.email.name }}" required>
+                                <label for="{{ form.email.id_for_label }}">Email</label>
+                                {% if form.email.errors %}
+                                <div class="invalid-feedback">{{ form.email.errors }}</div>
+                                {% endif %}
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="{{ form.password1.id_for_label }}" name="{{ form.password1.name }}" required>
+                                <label for="{{ form.password1.id_for_label }}">Mot de passe</label>
+                                {% if form.password1.errors %}
+                                <div class="invalid-feedback">{{ form.password1.errors }}</div>
+                                {% endif %}
+                            </div>
+
+                            <div class="form-floating mb-4">
+                                <input type="password" class="form-control" id="{{ form.password2.id_for_label }}" name="{{ form.password2.name }}" required>
+                                <label for="{{ form.password2.id_for_label }}">Confirmation du mot de passe</label>
+                                {% if form.password2.errors %}
+                                <div class="invalid-feedback">{{ form.password2.errors }}</div>
+                                {% endif %}
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100 py-3">
+                                S'inscrire
+                            </button>
+                        </form>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0 py-3">
+                        <p class="text-muted">Déjà un compte ? <a href="{% url 'login' %}" class="text-decoration-none">Connectez-vous</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    color: #0d6efd;
+    opacity: .65;
+}
+
+.form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.1);
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #0d6efd, #0a58ca);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.15);
+}
+</style>
+{% endblock %}

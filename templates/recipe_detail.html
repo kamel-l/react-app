@@ -1,0 +1,302 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{ recipe.name }} - Faimily{% endblock %}
+
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ recipe.name }}</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <style>
+        /* Vos styles CSS ici */
+    </style>
+</head>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="recipe-card">
+                {% if recipe.image %}
+                <img src="{{ recipe.image.url }}" class="recipe-image img-fluid" alt="{{ recipe.name }}">
+                {% else %}
+                <img src="/media/tengrai_image.png" class="recipe-image" alt="No Image">
+                {% endif %}
+                <div class="recipe-details">
+                    <h1>{{ recipe.name }}</h1>
+                     by <strong>{{ recipe.created_by.username }}</strong><p>Created on {{ recipe.created_at|date:"d F Y" }}</p>
+                    <button class="btn btn-success planning-btn" data-recipe-id="{{ recipe.id }}">
+                        <i class="fas fa-calendar-plus"></i> Add to Planning
+                    </button>
+
+                    <!-- Afficher le bouton "Edit" uniquement pour le créateur ou l'administrateur -->
+                    {% if user == recipe.created_by or user.is_superuser %}
+                    <a href="{% url 'edit_recipe' recipe.id %}" class="btn btn-secondary">Edit</a>
+                    {% endif %}
+
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <strong>Category:</strong> {{ recipe.category}}
+                        </div>
+                        <div class="col-md-4">
+                            <strong>Preparation time:</strong> {{ recipe.prep_time }} minutes
+                        </div>
+                        <div class="col-md-4">
+                            <strong>Cooking time:</strong> {{ recipe.cook_time }} minutes
+                        </div>
+                        <div class="col-md-4">
+                            <strong>Servings:</strong> {{ recipe.servings }}
+                        </div>
+                    </div>
+
+                    <div class="recipe-description mt-4">
+                        <p>{{ recipe.description }}</p>
+                    </div>
+
+                    <div class="recipe-ingredients mt-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-group list-group-flush">
+                                    {% for ingredient in right_column %}
+                                    <li class="list-group-item">{{ ingredient.name }} -------- {{ ingredient.quantity }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-group list-group-flush">
+                                    {% for ingredient in left_column %}
+                                    <li class="list-group-item">{{ ingredient.name }} -------- {{ ingredient.quantity }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recipe-instructions mt-4">
+                        <div class="list-group">
+                            {% for instruction in instructions %}
+                            <div class="list-group-item">
+                                <strong>Step {{ instruction.step_number }}:</strong> {{ instruction.description }}
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="recipe-actions">
+                        <a href="{% url 'RecipesListsViews' %}" class="btn btn-secondary">Back to List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Planning Modal -->
+<div class="modal fade" id="planningModal" tabindex="-1" aria-labelledby="planningModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add to Planning</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="planningForm">
+                    {% csrf_token %}
+                    <input type="hidden" id="recipe_title" name="recipe_title">
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Date</label>
+                        <input type="date" class="form-control" id="date" name="date" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="meal_type" class="form-label">Meal Type</label>
+                        <select class="form-select" id="meal_type" name="meal_type" required>
+                            <option value="">Choose a type...</option>
+                            <option value="Breakfast">Breakfast</option>
+                            <option value="Lunch">Lunch</option>
+                            <option value="Dinner">Dinner</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" id="saveMealBtn">
+                    <span class="spinner-border spinner-border-sm loading-spinner d-none" role="status"></span>
+                    <span class="btn-text">Save</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Review Section -->
+<div class="card mb-4">
+    <div class="card-body">
+        <h5 class="card-title mb-3">Add Review </h5>
+        <form id="reviewForm" data-recipe-id="{{ recipe.id }}" method="POST" action="{% url 'add_review' recipe.id %}">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label class="form-label">Note</label>
+                <div class="rating">
+                    {% for i in "54321" %}
+                    <input type="radio" name="rating" value="{{ i }}" id="star{{ i }}" required>
+                    <label for="star{{ i }}"><i class="bi bi-star-fill"></i></label>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Commentaire</label>
+                <textarea class="form-control" name="comment" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Soumettre l'avis</button>
+        </form>
+    </div>
+</div>
+
+<!-- Reviews List -->
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title mb-3">Reviews ({{ recipe.reviews.count }})</h5>
+        {% for review in recipe.reviews.all %}
+        <div class="review-item mb-3 pb-3 border-bottom">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <div>
+                    <strong>{{ review.user.username }}</strong>
+                    <div class="rating-display">
+                        {% for i in "12345" %}
+                        <i class="bi bi-star{% if forloop.counter <= review.rating %}-fill{% endif %}"></i>
+                        {% endfor %}
+                    </div>
+                </div>
+                <small class="text-muted">{{ review.created_at|date:"d M Y" }}</small>
+            </div>
+            <p class="mb-0">{{ review.comment }}</p>
+        </div>
+        {% empty %}
+        <p class="text-muted text-center">No reviews yet</p>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+
+    document.getElementById('reviewForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this);
+        const recipeId = this.dataset.recipeId;
+        
+        fetch(`/recipe/${recipeId}/review/`, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('Votre avis a été ajouté avec succès !');
+                window.location.reload();
+            } else {
+                alert('Erreur : ' + data.error);
+            }
+        })
+        .catch(error => {
+            alert('Erreur lors de l\'envoi du commentaire');
+            console.error('Erreur :', error);
+        });
+    });
+
+    
+    // Toast display function
+    function showToast(message, type = 'success') {
+        const toastHtml = `
+            <div class="toast" role="alert">
+                <div class="toast-header bg-${type} text-white">
+                    <strong class="me-auto">${type === 'success' ? 'Success' : 'Error'}</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                </div>
+                <div class="toast-body">${message}</div>
+            </div>
+        `;
+        const toastContainer = document.querySelector('.toast-container');
+        toastContainer.insertAdjacentHTML('beforeend', toastHtml);
+        const toast = new bootstrap.Toast(toastContainer.lastElementChild);
+        toast.show();
+    }
+
+    // Planning button handler
+    document.querySelectorAll('.planning-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const recipeId = this.dataset.recipeId;
+            document.getElementById('recipe_title').value = recipeId;
+            const planningModal = new bootstrap.Modal(document.getElementById('planningModal'));
+            planningModal.show();
+        });
+    });
+
+    // Save button handler
+    document.getElementById('saveMealBtn').addEventListener('click', function() {
+        const planningForm = document.getElementById('planningForm');
+        if (!planningForm.checkValidity()) {
+            planningForm.reportValidity();
+            return;
+        }
+
+        const loadingSpinner = document.querySelector('.loading-spinner');
+        const saveMealBtn = document.getElementById('saveMealBtn');
+
+        // Show spinner
+        loadingSpinner.classList.remove('d-none');
+        saveMealBtn.disabled = true;
+
+        // Get form data
+        const formData = {
+            recipe_id: document.getElementById('recipe_title').value,
+            date: document.getElementById('date').value,
+            meal_type: document.getElementById('meal_type').value
+        };
+
+        // Send data to server
+        fetch('/add_meal/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error adding to planning');
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Success
+            const planningModal = bootstrap.Modal.getInstance(document.getElementById('planningModal'));
+            planningModal.hide();
+            planningForm.reset();
+            showToast('Recipe successfully added to planning!', 'success');
+        })
+        .catch(error => {
+            showToast('Error: ' + error.message, 'danger');
+        })
+        .finally(() => {
+            // Hide spinner and re-enable button
+            loadingSpinner.classList.add('d-none');
+            saveMealBtn.disabled = false;
+        });
+    });
+</script>
+<script>
+    const instructions = {{ instructions_json|safe }};
+    ReactDOM.render(
+        React.createElement(RecipeSteps, { instructions: instructions }),
+        document.getElementById('recipe-steps-root')
+    );
+</script>
+{% endblock %}

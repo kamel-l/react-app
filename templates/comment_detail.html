@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Commentaire sur la recette : {{ comment.review.recipe.name }}</h1>
+<div>
+    <p><strong>Auteur :</strong> {{ comment.user.username }}</p>
+    <p><strong>Date :</strong> {{ comment.created_at }}</p>
+    <p><strong>Commentaire :</strong> {{ comment.text }}</p>
+</div>
+<a href="{% url 'recipe_detail' comment.recipe.id %}">Retour à la recette</a>
+{% endblock %}

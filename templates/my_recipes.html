@@ -1,0 +1,203 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}My Recipes{% endblock %}
+
+{% block content %}
+<head>
+    <style>
+        .bgr-home{
+            background-image: url('/media/tomatoes-yellow.jpg') ;
+            background-size: cover;
+        }
+    </style>
+</head>
+<div class="px-4 py-5 text-center bgr-home">
+    <h1 class="display-5 fw-bold home-title col-8 mx-auto">My Recipe</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">FaimilyMeal's Recipe Lists</p>
+    </div>
+</div>
+<div class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      
+        <a href="{% url 'new_recipe' %}" class="btn btn-primary">
+            <i class="bi bi-plus-lg"></i> New Recipe
+        </a>
+        <a href="{% url 'notifications' %}" class="btn btn-primary">
+            <i class="bi bi-plus-lg"></i> Search Recipe
+        </a>
+    </div>
+
+    <div class="mb-4">
+        <form method="GET" class="row g-3">
+            <div class="col-md-6">
+                <input type="text" name="q" 
+                       class="form-control" 
+                       placeholder="Search recipes..." 
+                       value="{{ request.GET.q }}">
+            </div>
+            <div class="col-md-4">
+                <select name="category" class="form-select">
+                    <option value="">All Categories</option>
+                    <option value="Starter" {% if request.GET.category == "Starter" %}selected{% endif %}>Starter</option>
+                    <option value="Main Course" {% if request.GET.category == "Main Course" %}selected{% endif %}>Main Course</option>
+                    <option value="Snack" {% if request.GET.category == "Snack" %}selected{% endif %}>Snack</option>
+                    <option value="Dessert" {% if request.GET.category == "Dessert" %}selected{% endif %}>Dessert</option>
+                    <option value="Other" {% if request.GET.category == "Other" %}selected{% endif %}>Other</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary w-100">Filter</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="row g-4">
+        {% for recipe in recipes %}
+        <div class="col-md-4">
+            <div class="card h-100 recipe-card shadow-sm">
+                {% if recipe.image %}
+                    <img src="{{ recipe.image.url }}" class="card-img-top" alt="{{ recipe.name }}">
+                    {% else %}
+                <img src="/media/media/image-recette/Crêpes-faciles.jpeg" class="recipe-image" alt="No Image">
+                {% endif %}
+                <button class="btn btn-sm btn-primary image_badge rounded-circle"
+                data-bs-toggle="modal" 
+                data-bs-target="#photoModal">
+                <i class="fas fa-camera"></i>
+        </button>
+                <div class="card-body">
+                    <span class="badge bg-primary category-badge">{{ recipe.category }}</span>
+                    <h5 class="card-title">{{ recipe.name }}</h5>
+                     <p class="card-text">{{ recipe.description|truncatechars:100 }}</p> 
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">
+                            <i class="bi bi-clock"></i> {{ recipe.prep_time }} min
+                        </small>
+                        <div class="btn-group">
+                            <a href="{% url 'RecipeDetailView' recipe.id %}" class="btn btn-sm btn-outline-primary">View</a>
+                            <form method="POST" action="{% url 'delete_recipe' recipe.id %}" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer cette recette ?');">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-sm btn-outline-danger">Supprimer</button>
+                            </form>
+                            <a href="{% url 'edit_recipe'  recipe.id %}" class="btn btn-sm btn-outline-secondary">Edit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="col-12 text-center py-5">
+            <i class="bi bi-journal-x display-1 text-muted"></i>
+            <p class="text-muted mt-3">No recipes found. Create your first recipe!</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<!-- Photo Upload Modal -->
+ 
+<div class="modal fade" id="photoModal" tabindex="-1" data-recipe-id="{{ recipe.id }}">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Update Photo </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="photoForm" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label class="form-label">New Photo {{ recipe.id }} </label>
+                        <input type="file" class="form-control" name="image" accept="image/jpeg,image/png" required>
+                        <div class="form-text">Max size: 5MB. Formats: JPG, PNG</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">
+                        <span class="spinner-border spinner-border-sm d-none me-2"></span>
+                        Save Photo
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+.recipe-card {
+    transition: transform 0.2s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.9rem;
+}
+.image_badge{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0.9rem;
+}
+</style>
+<script>
+    document.getElementById('photoForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const form = this;
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const spinner = submitBtn.querySelector('.spinner-border');
+        const recipeId = document.getElementById('photoModal').dataset.recipeId;
+        const formData = new FormData(form);
+        
+        try {
+            submitBtn.disabled = true;
+            spinner.classList.remove('d-none');
+            
+            const response = await fetch(`/recipe/${recipeId}/update-image/`, {
+                method: 'POST',
+                body: formData
+            });
+    
+            // Check response type
+            const contentType = response.headers.get('content-type');
+            if (contentType && contentType.includes('application/json')) {
+                const data = await response.json();
+                if (data.success) {
+                    window.location.reload();
+                    return;
+                }
+                throw new Error(data.error || 'Update failed');
+            }
+            
+            // Handle HTML response (usually error page)
+            if (contentType && contentType.includes('text/html')) {
+                throw new Error('Server error occurred');
+            }
+    
+        } catch (error) {
+            console.error('Error:', error);
+            alert(`Error updating photo: ${error.message}`);
+        } finally {
+            submitBtn.disabled = false;
+            spinner.classList.add('d-none');
+            const modal = bootstrap.Modal.getInstance(document.getElementById('photoModal'));
+            if (modal) modal.hide();
+        }
+    });
+
+    document.querySelectorAll('.delete-recipe-form').forEach(form => {
+        form.addEventListener('submit', function(e) {
+            if (!confirm('Êtes-vous sûr de vouloir supprimer cette recette ?')) {
+                e.preventDefault();
+            }
+        });
+    });
+</script>
+{% endblock %}

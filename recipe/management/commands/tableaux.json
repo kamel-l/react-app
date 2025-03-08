@@ -1,0 +1,6380 @@
+[
+    {
+        "tableau": 1,
+        "en_tetes": [
+            "100g de LÉGUMES",
+            "KCAL"
+        ],
+        "lignes": [
+            [
+                "Pour 100g",
+                "KCAL"
+            ],
+            [
+                "Apéricube (à l’unité)",
+                "16"
+            ],
+            [
+                "Bretzel (à l’unité 15 g)",
+                "80"
+            ],
+            [
+                "Cacahuètes (à l’unité)",
+                "10"
+            ],
+            [
+                "Chipster salé",
+                "460"
+            ],
+            [
+                "Chips Vico à l’ancienne saveur moutarde",
+                "549"
+            ],
+            [
+                "Crackers Belin Monaco emmental",
+                "555"
+            ],
+            [
+                "Monaco",
+                "507"
+            ],
+            [
+                "Noix de cajou",
+                "612"
+            ],
+            [
+                "Olives noires",
+                "336"
+            ],
+            [
+                "Olives vertes",
+                "123"
+            ],
+            [
+                "Pistaches",
+                "617"
+            ],
+            [
+                "Pringles original",
+                "540"
+            ]
+        ],
+        "dataframe": [
+            {
+                "100g de LÉGUMES": "Pour 100g",
+                "KCAL": "KCAL"
+            },
+            {
+                "100g de LÉGUMES": "Apéricube (à l’unité)",
+                "KCAL": "16"
+            },
+            {
+                "100g de LÉGUMES": "Bretzel (à l’unité 15 g)",
+                "KCAL": "80"
+            },
+            {
+                "100g de LÉGUMES": "Cacahuètes (à l’unité)",
+                "KCAL": "10"
+            },
+            {
+                "100g de LÉGUMES": "Chipster salé",
+                "KCAL": "460"
+            },
+            {
+                "100g de LÉGUMES": "Chips Vico à l’ancienne saveur moutarde",
+                "KCAL": "549"
+            },
+            {
+                "100g de LÉGUMES": "Crackers Belin Monaco emmental",
+                "KCAL": "555"
+            },
+            {
+                "100g de LÉGUMES": "Monaco",
+                "KCAL": "507"
+            },
+            {
+                "100g de LÉGUMES": "Noix de cajou",
+                "KCAL": "612"
+            },
+            {
+                "100g de LÉGUMES": "Olives noires",
+                "KCAL": "336"
+            },
+            {
+                "100g de LÉGUMES": "Olives vertes",
+                "KCAL": "123"
+            },
+            {
+                "100g de LÉGUMES": "Pistaches",
+                "KCAL": "617"
+            },
+            {
+                "100g de LÉGUMES": "Pringles original",
+                "KCAL": "540"
+            }
+        ]
+    },
+    {
+        "tableau": 2,
+        "en_tetes": [
+            "100g de LÉGUMES",
+            "KCAL"
+        ],
+        "lignes": [
+            [
+                "Boissons",
+                "kcal"
+            ],
+            [
+                "Bière canette = 33 cl",
+                "178"
+            ],
+            [
+                "Bière “33” Export bouteille = 25 cl",
+                "97"
+            ],
+            [
+                "Bière sans alcool canette = 33 cl",
+                "9"
+            ],
+            [
+                "Café pour 100 ml",
+                "15"
+            ],
+            [
+                "Calvados verre à liqueur = 4 cl",
+                "100"
+            ],
+            [
+                "Champagne brut flûte",
+                "70"
+            ],
+            [
+                "Champagne doux flûte",
+                "120"
+            ],
+            [
+                "Cidre brut bolée = 25 cl",
+                "77"
+            ],
+            [
+                "Coca cola verre = 250 ml",
+                "100"
+            ],
+            [
+                "Cognac verre = 4 cl",
+                "192"
+            ],
+            [
+                "Eau pour 100 ml",
+                "0"
+            ],
+            [
+                "Eau-de-vie verre à liqueur = 4 cl",
+                "100"
+            ],
+            [
+                "Martini verre = 8 cl",
+                "128"
+            ],
+            [
+                "Mousseux coupe = 10 cl",
+                "70"
+            ],
+            [
+                "Muscat verre = 15 cl",
+                "240"
+            ],
+            [
+                "Oasis orange verre = 15 cl",
+                "68"
+            ],
+            [
+                "Orangina verre = 15 cl",
+                "71"
+            ],
+            [
+                "Orangina light verre = 15 cl",
+                "11"
+            ],
+            [
+                "Pastis dose = 4 cl",
+                "130"
+            ],
+            [
+                "Pepsi pour 100ml",
+                "42"
+            ],
+            [
+                "Perrier",
+                "0"
+            ],
+            [
+                "Porto verre = 7 cl",
+                "80"
+            ],
+            [
+                "Punch verre = 8 cl",
+                "110-160"
+            ],
+            [
+                "Rhum verre = 4 cl",
+                "154"
+            ],
+            [
+                "Ricard dose = 4 cl",
+                "130"
+            ],
+            [
+                "Sirop à l’eau 10 g pour 1 verre",
+                "33"
+            ],
+            [
+                "Sprite 1 verre = 15 cl",
+                "54"
+            ],
+            [
+                "Spiritueux verre = 4 cl",
+                "112"
+            ],
+            [
+                "Thé pour 100 ml",
+                "0"
+            ],
+            [
+                "Thé glacé pour 100ml",
+                "30"
+            ],
+            [
+                "Suze verre = 8 cl",
+                "84"
+            ],
+            [
+                "Vermouth verre = 7 cl",
+                "77"
+            ],
+            [
+                "Vin blanc 10° verre = 15 cl",
+                "108"
+            ],
+            [
+                "Vin rouge 12° verre = 15 cl",
+                "105"
+            ],
+            [
+                "Vin cuit verre = 7 cl",
+                "160"
+            ],
+            [
+                "Vodka verre à liqueur = 4 cl",
+                "100"
+            ],
+            [
+                "Whisky verre = 8 cl",
+                "384"
+            ],
+            [
+                "Whisky verre = 8 cl",
+                "384"
+            ]
+        ],
+        "dataframe": [
+            {
+                "100g de LÉGUMES": "Boissons",
+                "KCAL": "kcal"
+            },
+            {
+                "100g de LÉGUMES": "Bière canette = 33 cl",
+                "KCAL": "178"
+            },
+            {
+                "100g de LÉGUMES": "Bière “33” Export bouteille = 25 cl",
+                "KCAL": "97"
+            },
+            {
+                "100g de LÉGUMES": "Bière sans alcool canette = 33 cl",
+                "KCAL": "9"
+            },
+            {
+                "100g de LÉGUMES": "Café pour 100 ml",
+                "KCAL": "15"
+            },
+            {
+                "100g de LÉGUMES": "Calvados verre à liqueur = 4 cl",
+                "KCAL": "100"
+            },
+            {
+                "100g de LÉGUMES": "Champagne brut flûte",
+                "KCAL": "70"
+            },
+            {
+                "100g de LÉGUMES": "Champagne doux flûte",
+                "KCAL": "120"
+            },
+            {
+                "100g de LÉGUMES": "Cidre brut bolée = 25 cl",
+                "KCAL": "77"
+            },
+            {
+                "100g de LÉGUMES": "Coca cola verre = 250 ml",
+                "KCAL": "100"
+            },
+            {
+                "100g de LÉGUMES": "Cognac verre = 4 cl",
+                "KCAL": "192"
+            },
+            {
+                "100g de LÉGUMES": "Eau pour 100 ml",
+                "KCAL": "0"
+            },
+            {
+                "100g de LÉGUMES": "Eau-de-vie verre à liqueur = 4 cl",
+                "KCAL": "100"
+            },
+            {
+                "100g de LÉGUMES": "Martini verre = 8 cl",
+                "KCAL": "128"
+            },
+            {
+                "100g de LÉGUMES": "Mousseux coupe = 10 cl",
+                "KCAL": "70"
+            },
+            {
+                "100g de LÉGUMES": "Muscat verre = 15 cl",
+                "KCAL": "240"
+            },
+            {
+                "100g de LÉGUMES": "Oasis orange verre = 15 cl",
+                "KCAL": "68"
+            },
+            {
+                "100g de LÉGUMES": "Orangina verre = 15 cl",
+                "KCAL": "71"
+            },
+            {
+                "100g de LÉGUMES": "Orangina light verre = 15 cl",
+                "KCAL": "11"
+            },
+            {
+                "100g de LÉGUMES": "Pastis dose = 4 cl",
+                "KCAL": "130"
+            },
+            {
+                "100g de LÉGUMES": "Pepsi pour 100ml",
+                "KCAL": "42"
+            },
+            {
+                "100g de LÉGUMES": "Perrier",
+                "KCAL": "0"
+            },
+            {
+                "100g de LÉGUMES": "Porto verre = 7 cl",
+                "KCAL": "80"
+            },
+            {
+                "100g de LÉGUMES": "Punch verre = 8 cl",
+                "KCAL": "110-160"
+            },
+            {
+                "100g de LÉGUMES": "Rhum verre = 4 cl",
+                "KCAL": "154"
+            },
+            {
+                "100g de LÉGUMES": "Ricard dose = 4 cl",
+                "KCAL": "130"
+            },
+            {
+                "100g de LÉGUMES": "Sirop à l’eau 10 g pour 1 verre",
+                "KCAL": "33"
+            },
+            {
+                "100g de LÉGUMES": "Sprite 1 verre = 15 cl",
+                "KCAL": "54"
+            },
+            {
+                "100g de LÉGUMES": "Spiritueux verre = 4 cl",
+                "KCAL": "112"
+            },
+            {
+                "100g de LÉGUMES": "Thé pour 100 ml",
+                "KCAL": "0"
+            },
+            {
+                "100g de LÉGUMES": "Thé glacé pour 100ml",
+                "KCAL": "30"
+            },
+            {
+                "100g de LÉGUMES": "Suze verre = 8 cl",
+                "KCAL": "84"
+            },
+            {
+                "100g de LÉGUMES": "Vermouth verre = 7 cl",
+                "KCAL": "77"
+            },
+            {
+                "100g de LÉGUMES": "Vin blanc 10° verre = 15 cl",
+                "KCAL": "108"
+            },
+            {
+                "100g de LÉGUMES": "Vin rouge 12° verre = 15 cl",
+                "KCAL": "105"
+            },
+            {
+                "100g de LÉGUMES": "Vin cuit verre = 7 cl",
+                "KCAL": "160"
+            },
+            {
+                "100g de LÉGUMES": "Vodka verre à liqueur = 4 cl",
+                "KCAL": "100"
+            },
+            {
+                "100g de LÉGUMES": "Whisky verre = 8 cl",
+                "KCAL": "384"
+            },
+            {
+                "100g de LÉGUMES": "Whisky verre = 8 cl",
+                "KCAL": "384"
+            }
+        ]
+    },
+    {
+        "tableau": 3,
+        "en_tetes": [
+            "100g de LÉGUMES",
+            "KCAL"
+        ],
+        "lignes": [
+            [
+                "Pour 100g de coquillages et crustacés",
+                "KCAL"
+            ],
+            [
+                "Belons",
+                "80"
+            ],
+            [
+                "Bigorneaux (décortiqués)",
+                "100"
+            ],
+            [
+                "Bouquet de crevettes",
+                "98"
+            ],
+            [
+                "Clams",
+                "80"
+            ],
+            [
+                "Clovisses",
+                "50"
+            ],
+            [
+                "Coques",
+                "47"
+            ],
+            [
+                "Coquillages",
+                "60"
+            ],
+            [
+                "Coquille St-Jacques",
+                "74"
+            ],
+            [
+                "Couteaux",
+                "55"
+            ],
+            [
+                "Crabe frais",
+                "85"
+            ],
+            [
+                "Crevettes grises",
+                "98"
+            ],
+            [
+                "Ecrevisses",
+                "71"
+            ],
+            [
+                "Gambas",
+                "98"
+            ],
+            [
+                "Homard",
+                "80"
+            ],
+            [
+                "Huîtres",
+                "70"
+            ],
+            [
+                "Langouste",
+                "110"
+            ],
+            [
+                "Langoustine",
+                "90"
+            ],
+            [
+                "Mollusques",
+                "90"
+            ],
+            [
+                "Moules",
+                "70"
+            ],
+            [
+                "Oursins",
+                "70"
+            ],
+            [
+                "Palourdes",
+                "95"
+            ],
+            [
+                "Pétoncles",
+                "50"
+            ],
+            [
+                "Poulpe",
+                "70"
+            ],
+            [
+                "Praires",
+                "61"
+            ],
+            [
+                "Scampi",
+                "47"
+            ],
+            [
+                "Seiche",
+                "90"
+            ],
+            [
+                "Tourteau",
+                "85"
+            ]
+        ],
+        "dataframe": [
+            {
+                "100g de LÉGUMES": "Pour 100g de coquillages et crustacés",
+                "KCAL": "KCAL"
+            },
+            {
+                "100g de LÉGUMES": "Belons",
+                "KCAL": "80"
+            },
+            {
+                "100g de LÉGUMES": "Bigorneaux (décortiqués)",
+                "KCAL": "100"
+            },
+            {
+                "100g de LÉGUMES": "Bouquet de crevettes",
+                "KCAL": "98"
+            },
+            {
+                "100g de LÉGUMES": "Clams",
+                "KCAL": "80"
+            },
+            {
+                "100g de LÉGUMES": "Clovisses",
+                "KCAL": "50"
+            },
+            {
+                "100g de LÉGUMES": "Coques",
+                "KCAL": "47"
+            },
+            {
+                "100g de LÉGUMES": "Coquillages",
+                "KCAL": "60"
+            },
+            {
+                "100g de LÉGUMES": "Coquille St-Jacques",
+                "KCAL": "74"
+            },
+            {
+                "100g de LÉGUMES": "Couteaux",
+                "KCAL": "55"
+            },
+            {
+                "100g de LÉGUMES": "Crabe frais",
+                "KCAL": "85"
+            },
+            {
+                "100g de LÉGUMES": "Crevettes grises",
+                "KCAL": "98"
+            },
+            {
+                "100g de LÉGUMES": "Ecrevisses",
+                "KCAL": "71"
+            },
+            {
+                "100g de LÉGUMES": "Gambas",
+                "KCAL": "98"
+            },
+            {
+                "100g de LÉGUMES": "Homard",
+                "KCAL": "80"
+            },
+            {
+                "100g de LÉGUMES": "Huîtres",
+                "KCAL": "70"
+            },
+            {
+                "100g de LÉGUMES": "Langouste",
+                "KCAL": "110"
+            },
+            {
+                "100g de LÉGUMES": "Langoustine",
+                "KCAL": "90"
+            },
+            {
+                "100g de LÉGUMES": "Mollusques",
+                "KCAL": "90"
+            },
+            {
+                "100g de LÉGUMES": "Moules",
+                "KCAL": "70"
+            },
+            {
+                "100g de LÉGUMES": "Oursins",
+                "KCAL": "70"
+            },
+            {
+                "100g de LÉGUMES": "Palourdes",
+                "KCAL": "95"
+            },
+            {
+                "100g de LÉGUMES": "Pétoncles",
+                "KCAL": "50"
+            },
+            {
+                "100g de LÉGUMES": "Poulpe",
+                "KCAL": "70"
+            },
+            {
+                "100g de LÉGUMES": "Praires",
+                "KCAL": "61"
+            },
+            {
+                "100g de LÉGUMES": "Scampi",
+                "KCAL": "47"
+            },
+            {
+                "100g de LÉGUMES": "Seiche",
+                "KCAL": "90"
+            },
+            {
+                "100g de LÉGUMES": "Tourteau",
+                "KCAL": "85"
+            }
+        ]
+    },
+    {
+        "tableau": 4,
+        "en_tetes": [
+            "100g de LÉGUMES",
+            "KCAL"
+        ],
+        "lignes": [
+            [
+                "Pour 100g de poisson",
+                "KCAL"
+            ],
+            [
+                "Aiglefin",
+                "71"
+            ],
+            [
+                "Anchois",
+                "160"
+            ],
+            [
+                "Anguille",
+                "250"
+            ],
+            [
+                "Anguille fumée",
+                "305"
+            ],
+            [
+                "Araignée de mer",
+                "95"
+            ],
+            [
+                "Bar",
+                "90"
+            ],
+            [
+                "Barbue",
+                "117"
+            ],
+            [
+                "Baudroie ou lotte",
+                "79"
+            ],
+            [
+                "Brème",
+                "100"
+            ],
+            [
+                "Brochet",
+                "78"
+            ],
+            [
+                "Cabillaud ou morue",
+                "79"
+            ],
+            [
+                "Calmar",
+                "89"
+            ],
+            [
+                "Carpe d’élevage",
+                "90"
+            ],
+            [
+                "Carpe sauvage",
+                "145"
+            ],
+            [
+                "Carrelet",
+                "65"
+            ],
+            [
+                "Caviar",
+                "275"
+            ],
+            [
+                "Colin ou merlu",
+                "92"
+            ],
+            [
+                "Congre",
+                "110"
+            ],
+            [
+                "Daurade",
+                "77"
+            ],
+            [
+                "Eglefin",
+                "71"
+            ],
+            [
+                "Encornet",
+                "89"
+            ],
+            [
+                "Eperlan",
+                "78"
+            ],
+            [
+                "Espadon",
+                "116"
+            ],
+            [
+                "Esturgeon",
+                "125"
+            ],
+            [
+                "Flétan",
+                "117"
+            ],
+            [
+                "Gardon",
+                "112"
+            ],
+            [
+                "Goujon",
+                "62"
+            ],
+            [
+                "Grondin",
+                "95"
+            ],
+            [
+                "Haddock",
+                "103"
+            ],
+            [
+                "Hareng frais",
+                "149"
+            ],
+            [
+                "Hareng fumé",
+                "200"
+            ],
+            [
+                "Lamproie",
+                "177"
+            ],
+            [
+                "Lançon ou équille",
+                "79"
+            ],
+            [
+                "Lieu",
+                "90"
+            ],
+            [
+                "Limande",
+                "78"
+            ],
+            [
+                "Lotte ou baudroie",
+                "79"
+            ],
+            [
+                "Maquereau frais",
+                "128"
+            ],
+            [
+                "Merlan",
+                "90"
+            ],
+            [
+                "Merlu ou colin",
+                "92"
+            ],
+            [
+                "Mérou",
+                "225"
+            ],
+            [
+                "Morue",
+                "79"
+            ],
+            [
+                "Morue salée",
+                "163"
+            ],
+            [
+                "Mousse de poisson",
+                "185"
+            ],
+            [
+                "Morue séchée",
+                "322"
+            ],
+            [
+                "Mulet",
+                "151"
+            ],
+            [
+                "Murène",
+                "176"
+            ],
+            [
+                "Oeufs de lump",
+                "80"
+            ],
+            [
+                "Oeufs de poissons",
+                "225"
+            ],
+            [
+                "Omble ou ombre",
+                "123"
+            ],
+            [
+                "Ormeaux",
+                "92"
+            ],
+            [
+                "Pagre",
+                "77"
+            ],
+            [
+                "Perche",
+                "112"
+            ],
+            [
+                "Pieuvre",
+                "61"
+            ],
+            [
+                "Plie",
+                "65"
+            ],
+            [
+                "Poissons à l’huile",
+                "325"
+            ],
+            [
+                "Poissons demi-gras",
+                "120"
+            ],
+            [
+                "Poissons fumés",
+                "265"
+            ],
+            [
+                "Poissons gras",
+                "180"
+            ],
+            [
+                "Poissons maigres",
+                "75"
+            ],
+            [
+                "Poissons panés",
+                "175"
+            ],
+            [
+                "Poissons séchés",
+                "320"
+            ],
+            [
+                "Raie",
+                "89"
+            ],
+            [
+                "Rascasse",
+                "98"
+            ],
+            [
+                "Requin",
+                "106"
+            ],
+            [
+                "Rillettes de saumon",
+                "320"
+            ],
+            [
+                "Rollmops",
+                "224"
+            ],
+            [
+                "Rouget-barbet",
+                "148"
+            ],
+            [
+                "Rouget-grondin",
+                "95"
+            ],
+            [
+                "Roussette",
+                "106"
+            ],
+            [
+                "Saint-Jacques",
+                "74"
+            ],
+            [
+                "Saint-Pierre",
+                "74"
+            ],
+            [
+                "Sandre",
+                "112"
+            ],
+            [
+                "Sardines à l’huile",
+                "125"
+            ],
+            [
+                "Sardines fraîches",
+                "77"
+            ],
+            [
+                "Saumon (conserve)",
+                "170"
+            ],
+            [
+                "Saumon frais",
+                "200"
+            ],
+            [
+                "Saumon fumé",
+                "265"
+            ],
+            [
+                "Saumonette",
+                "106"
+            ],
+            [
+                "Silure",
+                "250"
+            ],
+            [
+                "Sole",
+                "78"
+            ],
+            [
+                "Soupe de Poissons (1 louche)",
+                "90"
+            ],
+            [
+                "Sprats",
+                "160"
+            ],
+            [
+                "Tanche",
+                "75"
+            ],
+            [
+                "Thon à l’huile",
+                "280"
+            ],
+            [
+                "Thon frais",
+                "225"
+            ],
+            [
+                "Truite",
+                "103"
+            ],
+            [
+                "Truite saumonée",
+                "151"
+            ],
+            [
+                "Turbot",
+                "118"
+            ],
+            [
+                "Turbotin",
+                "118"
+            ]
+        ],
+        "dataframe": [
+            {
+                "100g de LÉGUMES": "Pour 100g de poisson",
+                "KCAL": "KCAL"
+            },
+            {
+                "100g de LÉGUMES": "Aiglefin",
+                "KCAL": "71"
+            },
+            {
+                "100g de LÉGUMES": "Anchois",
+                "KCAL": "160"
+            },
+            {
+                "100g de LÉGUMES": "Anguille",
+                "KCAL": "250"
+            },
+            {
+                "100g de LÉGUMES": "Anguille fumée",
+                "KCAL": "305"
+            },
+            {
+                "100g de LÉGUMES": "Araignée de mer",
+                "KCAL": "95"
+            },
+            {
+                "100g de LÉGUMES": "Bar",
+                "KCAL": "90"
+            },
+            {
+                "100g de LÉGUMES": "Barbue",
+                "KCAL": "117"
+            },
+            {
+                "100g de LÉGUMES": "Baudroie ou lotte",
+                "KCAL": "79"
+            },
+            {
+                "100g de LÉGUMES": "Brème",
+                "KCAL": "100"
+            },
+            {
+                "100g de LÉGUMES": "Brochet",
+                "KCAL": "78"
+            },
+            {
+                "100g de LÉGUMES": "Cabillaud ou morue",
+                "KCAL": "79"
+            },
+            {
+                "100g de LÉGUMES": "Calmar",
+                "KCAL": "89"
+            },
+            {
+                "100g de LÉGUMES": "Carpe d’élevage",
+                "KCAL": "90"
+            },
+            {
+                "100g de LÉGUMES": "Carpe sauvage",
+                "KCAL": "145"
+            },
+            {
+                "100g de LÉGUMES": "Carrelet",
+                "KCAL": "65"
+            },
+            {
+                "100g de LÉGUMES": "Caviar",
+                "KCAL": "275"
+            },
+            {
+                "100g de LÉGUMES": "Colin ou merlu",
+                "KCAL": "92"
+            },
+            {
+                "100g de LÉGUMES": "Congre",
+                "KCAL": "110"
+            },
+            {
+                "100g de LÉGUMES": "Daurade",
+                "KCAL": "77"
+            },
+            {
+                "100g de LÉGUMES": "Eglefin",
+                "KCAL": "71"
+            },
+            {
+                "100g de LÉGUMES": "Encornet",
+                "KCAL": "89"
+            },
+            {
+                "100g de LÉGUMES": "Eperlan",
+                "KCAL": "78"
+            },
+            {
+                "100g de LÉGUMES": "Espadon",
+                "KCAL": "116"
+            },
+            {
+                "100g de LÉGUMES": "Esturgeon",
+                "KCAL": "125"
+            },
+            {
+                "100g de LÉGUMES": "Flétan",
+                "KCAL": "117"
+            },
+            {
+                "100g de LÉGUMES": "Gardon",
+                "KCAL": "112"
+            },
+            {
+                "100g de LÉGUMES": "Goujon",
+                "KCAL": "62"
+            },
+            {
+                "100g de LÉGUMES": "Grondin",
+                "KCAL": "95"
+            },
+            {
+                "100g de LÉGUMES": "Haddock",
+                "KCAL": "103"
+            },
+            {
+                "100g de LÉGUMES": "Hareng frais",
+                "KCAL": "149"
+            },
+            {
+                "100g de LÉGUMES": "Hareng fumé",
+                "KCAL": "200"
+            },
+            {
+                "100g de LÉGUMES": "Lamproie",
+                "KCAL": "177"
+            },
+            {
+                "100g de LÉGUMES": "Lançon ou équille",
+                "KCAL": "79"
+            },
+            {
+                "100g de LÉGUMES": "Lieu",
+                "KCAL": "90"
+            },
+            {
+                "100g de LÉGUMES": "Limande",
+                "KCAL": "78"
+            },
+            {
+                "100g de LÉGUMES": "Lotte ou baudroie",
+                "KCAL": "79"
+            },
+            {
+                "100g de LÉGUMES": "Maquereau frais",
+                "KCAL": "128"
+            },
+            {
+                "100g de LÉGUMES": "Merlan",
+                "KCAL": "90"
+            },
+            {
+                "100g de LÉGUMES": "Merlu ou colin",
+                "KCAL": "92"
+            },
+            {
+                "100g de LÉGUMES": "Mérou",
+                "KCAL": "225"
+            },
+            {
+                "100g de LÉGUMES": "Morue",
+                "KCAL": "79"
+            },
+            {
+                "100g de LÉGUMES": "Morue salée",
+                "KCAL": "163"
+            },
+            {
+                "100g de LÉGUMES": "Mousse de poisson",
+                "KCAL": "185"
+            },
+            {
+                "100g de LÉGUMES": "Morue séchée",
+                "KCAL": "322"
+            },
+            {
+                "100g de LÉGUMES": "Mulet",
+                "KCAL": "151"
+            },
+            {
+                "100g de LÉGUMES": "Murène",
+                "KCAL": "176"
+            },
+            {
+                "100g de LÉGUMES": "Oeufs de lump",
+                "KCAL": "80"
+            },
+            {
+                "100g de LÉGUMES": "Oeufs de poissons",
+                "KCAL": "225"
+            },
+            {
+                "100g de LÉGUMES": "Omble ou ombre",
+                "KCAL": "123"
+            },
+            {
+                "100g de LÉGUMES": "Ormeaux",
+                "KCAL": "92"
+            },
+            {
+                "100g de LÉGUMES": "Pagre",
+                "KCAL": "77"
+            },
+            {
+                "100g de LÉGUMES": "Perche",
+                "KCAL": "112"
+            },
+            {
+                "100g de LÉGUMES": "Pieuvre",
+                "KCAL": "61"
+            },
+            {
+                "100g de LÉGUMES": "Plie",
+                "KCAL": "65"
+            },
+            {
+                "100g de LÉGUMES": "Poissons à l’huile",
+                "KCAL": "325"
+            },
+            {
+                "100g de LÉGUMES": "Poissons demi-gras",
+                "KCAL": "120"
+            },
+            {
+                "100g de LÉGUMES": "Poissons fumés",
+                "KCAL": "265"
+            },
+            {
+                "100g de LÉGUMES": "Poissons gras",
+                "KCAL": "180"
+            },
+            {
+                "100g de LÉGUMES": "Poissons maigres",
+                "KCAL": "75"
+            },
+            {
+                "100g de LÉGUMES": "Poissons panés",
+                "KCAL": "175"
+            },
+            {
+                "100g de LÉGUMES": "Poissons séchés",
+                "KCAL": "320"
+            },
+            {
+                "100g de LÉGUMES": "Raie",
+                "KCAL": "89"
+            },
+            {
+                "100g de LÉGUMES": "Rascasse",
+                "KCAL": "98"
+            },
+            {
+                "100g de LÉGUMES": "Requin",
+                "KCAL": "106"
+            },
+            {
+                "100g de LÉGUMES": "Rillettes de saumon",
+                "KCAL": "320"
+            },
+            {
+                "100g de LÉGUMES": "Rollmops",
+                "KCAL": "224"
+            },
+            {
+                "100g de LÉGUMES": "Rouget-barbet",
+                "KCAL": "148"
+            },
+            {
+                "100g de LÉGUMES": "Rouget-grondin",
+                "KCAL": "95"
+            },
+            {
+                "100g de LÉGUMES": "Roussette",
+                "KCAL": "106"
+            },
+            {
+                "100g de LÉGUMES": "Saint-Jacques",
+                "KCAL": "74"
+            },
+            {
+                "100g de LÉGUMES": "Saint-Pierre",
+                "KCAL": "74"
+            },
+            {
+                "100g de LÉGUMES": "Sandre",
+                "KCAL": "112"
+            },
+            {
+                "100g de LÉGUMES": "Sardines à l’huile",
+                "KCAL": "125"
+            },
+            {
+                "100g de LÉGUMES": "Sardines fraîches",
+                "KCAL": "77"
+            },
+            {
+                "100g de LÉGUMES": "Saumon (conserve)",
+                "KCAL": "170"
+            },
+            {
+                "100g de LÉGUMES": "Saumon frais",
+                "KCAL": "200"
+            },
+            {
+                "100g de LÉGUMES": "Saumon fumé",
+                "KCAL": "265"
+            },
+            {
+                "100g de LÉGUMES": "Saumonette",
+                "KCAL": "106"
+            },
+            {
+                "100g de LÉGUMES": "Silure",
+                "KCAL": "250"
+            },
+            {
+                "100g de LÉGUMES": "Sole",
+                "KCAL": "78"
+            },
+            {
+                "100g de LÉGUMES": "Soupe de Poissons (1 louche)",
+                "KCAL": "90"
+            },
+            {
+                "100g de LÉGUMES": "Sprats",
+                "KCAL": "160"
+            },
+            {
+                "100g de LÉGUMES": "Tanche",
+                "KCAL": "75"
+            },
+            {
+                "100g de LÉGUMES": "Thon à l’huile",
+                "KCAL": "280"
+            },
+            {
+                "100g de LÉGUMES": "Thon frais",
+                "KCAL": "225"
+            },
+            {
+                "100g de LÉGUMES": "Truite",
+                "KCAL": "103"
+            },
+            {
+                "100g de LÉGUMES": "Truite saumonée",
+                "KCAL": "151"
+            },
+            {
+                "100g de LÉGUMES": "Turbot",
+                "KCAL": "118"
+            },
+            {
+                "100g de LÉGUMES": "Turbotin",
+                "KCAL": "118"
+            }
+        ]
+    },
+    {
+        "tableau": 5,
+        "en_tetes": [
+            "100g de LÉGUMES",
+            "KCAL"
+        ],
+        "lignes": [
+            [
+                "Pour 100g",
+                "kcal"
+            ],
+            [
+                "Agneau (cervelle)",
+                "112"
+            ],
+            [
+                "Agneau (côtelettes)",
+                "330"
+            ],
+            [
+                "Agneau (épaule)",
+                "289"
+            ],
+            [
+                "Agneau (foie)",
+                "132"
+            ],
+            [
+                "Agneau (gigot)",
+                "250"
+            ],
+            [
+                "Agneau (langue)",
+                "193"
+            ],
+            [
+                "Agneau (rognon)",
+                "87"
+            ],
+            [
+                "Agneau (selle)",
+                "234"
+            ],
+            [
+                "Agneau",
+                "280"
+            ],
+            [
+                "Aloyau de boeuf",
+                "266"
+            ],
+            [
+                "Andouille",
+                "300"
+            ],
+            [
+                "Andouillette",
+                "320"
+            ],
+            [
+                "Bacon",
+                "385"
+            ],
+            [
+                "Bavette (boeuf)",
+                "200"
+            ],
+            [
+                "Bécasse",
+                "115"
+            ],
+            [
+                "Bifteck de boeuf",
+                "200"
+            ],
+            [
+                "Bifteck de cheval",
+                "110"
+            ],
+            [
+                "Boeuf (aiguillette)",
+                "200"
+            ],
+            [
+                "Boeuf (aloyau)",
+                "266"
+            ],
+            [
+                "Boeuf (araignée)",
+                "200"
+            ],
+            [
+                "Boeuf (bavette)",
+                "200"
+            ],
+            [
+                "Boeuf (cervelle)",
+                "130"
+            ],
+            [
+                "Boeuf (coeur)",
+                "126"
+            ],
+            [
+                "Boeuf (corned-beef)",
+                "275"
+            ],
+            [
+                "Boeuf (côte)",
+                "260"
+            ],
+            [
+                "Boeuf (culotte)",
+                "289"
+            ],
+            [
+                "Boeuf (échine)",
+                "257"
+            ],
+            [
+                "Boeuf (entrecôte)",
+                "200"
+            ],
+            [
+                "Boeuf (épaule)",
+                "216"
+            ],
+            [
+                "Boeuf (faux-filet)",
+                "156"
+            ],
+            [
+                "Boeuf (filet)",
+                "180"
+            ],
+            [
+                "Boeuf (foie)",
+                "116"
+            ],
+            [
+                "Boeuf (gîte)",
+                "300"
+            ],
+            [
+                "Boeuf (hampe)",
+                "200"
+            ],
+            [
+                "Boeuf (langue)",
+                "200"
+            ],
+            [
+                "Boeuf (macreuse)",
+                "242"
+            ],
+            [
+                "Boeuf (noix)",
+                "184"
+            ],
+            [
+                "Boeuf (onglet)",
+                "200"
+            ],
+            [
+                "Boeuf (paleron)",
+                "216"
+            ],
+            [
+                "Boeuf (palette)",
+                "242"
+            ],
+            [
+                "Boeuf (plates côtes)",
+                "250"
+            ],
+            [
+                "Boeuf (rognon)",
+                "125"
+            ],
+            [
+                "Boeuf (rond de gîte)",
+                "225"
+            ],
+            [
+                "Boeuf (rosbif)",
+                "160"
+            ],
+            [
+                "Boeuf (rumsteack)",
+                "200"
+            ],
+            [
+                "Boeuf (steack)",
+                "200"
+            ],
+            [
+                "Boeuf (tendron)",
+                "300"
+            ],
+            [
+                "Boeuf (tournedos)",
+                "200"
+            ],
+            [
+                "Boeuf (tripes)",
+                "94"
+            ],
+            [
+                "Bœuf (steak haché)",
+                "239"
+            ],
+            [
+                "Caille",
+                "115"
+            ],
+            [
+                "Canard",
+                "250"
+            ],
+            [
+                "Canard sauvage",
+                "126"
+            ],
+            [
+                "Carré de porc",
+                "330"
+            ],
+            [
+                "Carré de veau",
+                "171"
+            ],
+            [
+                "Cerf",
+                "116"
+            ],
+            [
+                "Cervelas",
+                "320"
+            ],
+            [
+                "Cervelle",
+                "125"
+            ],
+            [
+                "Chair à saucisse",
+                "422"
+            ],
+            [
+                "Charcuterie",
+                "450"
+            ],
+            [
+                "Cheval (steack)",
+                "110"
+            ],
+            [
+                "Chevreau",
+                "160"
+            ],
+            [
+                "Chevreuil",
+                "120"
+            ],
+            [
+                "Corned-beef",
+                "275"
+            ],
+            [
+                "Côtelettes d’agneau",
+                "330"
+            ],
+            [
+                "Côtes de mouton",
+                "300"
+            ],
+            [
+                "côtes de porc",
+                "330"
+            ],
+            [
+                "Côtes de veau",
+                "168"
+            ],
+            [
+                "Culotte de boeuf",
+                "289"
+            ],
+            [
+                "Culotte de veau",
+                "171"
+            ],
+            [
+                "Dinde",
+                "260"
+            ],
+            [
+                "Dinde",
+                "125"
+            ],
+            [
+                "Dinde, viande rôtie",
+                "150"
+            ],
+            [
+                "Dindonneau",
+                "260"
+            ],
+            [
+                "Echine de boeuf",
+                "257"
+            ],
+            [
+                "Echine de porc",
+                "302"
+            ],
+            [
+                "Escalope de veau",
+                "170"
+            ],
+            [
+                "Faisan",
+                "106"
+            ],
+            [
+                "Faux-filet (boeuf)",
+                "360"
+            ],
+            [
+                "Foie gras",
+                "450"
+            ],
+            [
+                "Foie",
+                "133"
+            ],
+            [
+                "Fromage de tête",
+                "342"
+            ],
+            [
+                "Grenouille (cuisses)",
+                "72"
+            ],
+            [
+                "Grive",
+                "120"
+            ],
+            [
+                "Hamburger",
+                "560"
+            ],
+            [
+                "Hot-dog (unité)",
+                "400"
+            ],
+            [
+                "Jambon blanc cuit à l’eau",
+                "50"
+            ],
+            [
+                "Jambon cru",
+                "330"
+            ],
+            [
+                "Jambon cuit",
+                "290"
+            ],
+            [
+                "Jambon de Paris",
+                "290"
+            ],
+            [
+                "Jambon fumé",
+                "380"
+            ],
+            [
+                "Jambonneau",
+                "290"
+            ],
+            [
+                "Jarret de veau",
+                "183"
+            ],
+            [
+                "Langue",
+                "200"
+            ],
+            [
+                "Lapin de garenne",
+                "133"
+            ],
+            [
+                "Lapin domestique",
+                "160"
+            ],
+            [
+                "Lard fumé",
+                "670"
+            ],
+            [
+                "Lard",
+                "575"
+            ],
+            [
+                "Lièvre",
+                "100"
+            ],
+            [
+                "Macreuse (boeuf)",
+                "242"
+            ],
+            [
+                "Marcassin",
+                "104"
+            ],
+            [
+                "Merguez",
+                "520"
+            ],
+            [
+                "Moelle",
+                "605"
+            ],
+            [
+                "Mortadelle",
+                "305"
+            ],
+            [
+                "Mousse de foie",
+                "410"
+            ],
+            [
+                "Mouton (cervelle)",
+                "120"
+            ],
+            [
+                "Mouton (coeur)",
+                "157"
+            ],
+            [
+                "Mouton (côtes)",
+                "300"
+            ],
+            [
+                "Mouton (épaule)",
+                "289"
+            ],
+            [
+                "Mouton (filet)",
+                "225"
+            ],
+            [
+                "Mouton (foie)",
+                "132"
+            ],
+            [
+                "Mouton (gigot)",
+                "250"
+            ],
+            [
+                "Mouton (langue)",
+                "264"
+            ],
+            [
+                "Mouton (rognon)",
+                "105"
+            ],
+            [
+                "Mouton (selle)",
+                "250"
+            ],
+            [
+                "Mouton",
+                "265"
+            ],
+            [
+                "Museau de porc",
+                "342"
+            ],
+            [
+                "Noix de boeuf",
+                "184"
+            ],
+            [
+                "Noix de porc",
+                "289"
+            ],
+            [
+                "Noix de veau",
+                "160"
+            ],
+            [
+                "Œuf dur",
+                "70"
+            ],
+            [
+                "Œuf au plat",
+                "90"
+            ],
+            [
+                "Œuf poché",
+                "143"
+            ],
+            [
+                "Oie",
+                "350"
+            ],
+            [
+                "Pâté de campagne",
+                "455"
+            ],
+            [
+                "Pâté de foie",
+                "465"
+            ],
+            [
+                "Pâté de tête",
+                "342"
+            ],
+            [
+                "Perdreau",
+                "115"
+            ],
+            [
+                "Perdrix",
+                "115"
+            ],
+            [
+                "Petit salé",
+                "330"
+            ],
+            [
+                "Pied de veau",
+                "342"
+            ],
+            [
+                "Pigeon",
+                "108"
+            ],
+            [
+                "Pintade",
+                "108"
+            ],
+            [
+                "Poitrine de porc",
+                "300"
+            ],
+            [
+                "Porc (carré)",
+                "330"
+            ],
+            [
+                "Porc (cervelle)",
+                "129"
+            ],
+            [
+                "Porc (coeur)",
+                "115"
+            ],
+            [
+                "Porc (côtes)",
+                "330"
+            ],
+            [
+                "Porc (échine)",
+                "302"
+            ],
+            [
+                "Porc (filet)",
+                "290"
+            ],
+            [
+                "Porc (foie)",
+                "135"
+            ],
+            [
+                "Porc (jambon fumé)",
+                "385"
+            ],
+            [
+                "Porc (jambon)",
+                "300"
+            ],
+            [
+                "Porc (langue)",
+                "207"
+            ],
+            [
+                "Porc (lard fumé)",
+                "670"
+            ],
+            [
+                "Porc (lard)",
+                "575"
+            ],
+            [
+                "Porc (noix)",
+                "289"
+            ],
+            [
+                "Porc (palette)",
+                "300"
+            ],
+            [
+                "Porc (pied)",
+                "342"
+            ],
+            [
+                "Porc (poitrine)",
+                "300"
+            ],
+            [
+                "Porc (rognons)",
+                "102"
+            ],
+            [
+                "Porc (rôti)",
+                "300"
+            ],
+            [
+                "Porc (salami)",
+                "410"
+            ],
+            [
+                "Porc (saucisse)",
+                "330"
+            ],
+            [
+                "Porc (saucisson)",
+                "440"
+            ],
+            [
+                "Porc (travers)",
+                "305"
+            ],
+            [
+                "Porc",
+                "300"
+            ],
+            [
+                "Poule",
+                "300"
+            ],
+            [
+                "Poulet",
+                "150"
+            ],
+            [
+                "Quasi de veau",
+                "171"
+            ],
+            [
+                "Rillettes",
+                "250"
+            ],
+            [
+                "Rillettes d’oie",
+                "464"
+            ],
+            [
+                "Ris de veau",
+                "125"
+            ],
+            [
+                "Rognons",
+                "120"
+            ],
+            [
+                "Rond de gîte",
+                "225"
+            ],
+            [
+                "Rosbif",
+                "160"
+            ],
+            [
+                "Rôti de porc",
+                "300"
+            ],
+            [
+                "Rôti de veau",
+                "168"
+            ],
+            [
+                "Sanglier",
+                "104"
+            ],
+            [
+                "Tartare (steack)",
+                "200"
+            ],
+            [
+                "Tendron de boeuf",
+                "300"
+            ],
+            [
+                "Tête de veau",
+                "210"
+            ],
+            [
+                "Tournedos (boeuf)",
+                "200"
+            ],
+            [
+                "Travers de porc",
+                "305"
+            ],
+            [
+                "Tripes",
+                "94"
+            ],
+            [
+                "Veau (aloyau)",
+                "175"
+            ],
+            [
+                "Veau (araignée)",
+                "171"
+            ],
+            [
+                "Veau (carré)",
+                "171"
+            ],
+            [
+                "Veau (cervelle)",
+                "120"
+            ],
+            [
+                "Veau (coeur)",
+                "127"
+            ],
+            [
+                "Veau (côtes)",
+                "168"
+            ],
+            [
+                "Veau (épaule)",
+                "168"
+            ],
+            [
+                "Veau, escalope, poêlée",
+                "150"
+            ],
+            [
+                "Veau (foie)",
+                "137"
+            ],
+            [
+                "Veau (hampe)",
+                "200"
+            ],
+            [
+                "Veau (jarret)",
+                "183"
+            ],
+            [
+                "Veau (langue)",
+                "123"
+            ],
+            [
+                "Veau (longe)",
+                "171"
+            ],
+            [
+                "Veau (noix)",
+                "160"
+            ],
+            [
+                "Veau (onglet)",
+                "171"
+            ],
+            [
+                "Veau (pieds)",
+                "342"
+            ],
+            [
+                "Veau (quasi)",
+                "171"
+            ],
+            [
+                "Veau (ris)",
+                "116"
+            ],
+            [
+                "Veau (rognon)",
+                "123"
+            ],
+            [
+                "Veau (rôti)",
+                "168"
+            ],
+            [
+                "Veau (tête)",
+                "210"
+            ]
+        ],
+        "dataframe": [
+            {
+                "100g de LÉGUMES": "Pour 100g",
+                "KCAL": "kcal"
+            },
+            {
+                "100g de LÉGUMES": "Agneau (cervelle)",
+                "KCAL": "112"
+            },
+            {
+                "100g de LÉGUMES": "Agneau (côtelettes)",
+                "KCAL": "330"
+            },
+            {
+                "100g de LÉGUMES": "Agneau (épaule)",
+                "KCAL": "289"
+            },
+            {
+                "100g de LÉGUMES": "Agneau (foie)",
+                "KCAL": "132"
+            },
+            {
+                "100g de LÉGUMES": "Agneau (gigot)",
+                "KCAL": "250"
+            },
+            {
+                "100g de LÉGUMES": "Agneau (langue)",
+                "KCAL": "193"
+            },
+            {
+                "100g de LÉGUMES": "Agneau (rognon)",
+                "KCAL": "87"
+            },
+            {
+                "100g de LÉGUMES": "Agneau (selle)",
+                "KCAL": "234"
+            },
+            {
+                "100g de LÉGUMES": "Agneau",
+                "KCAL": "280"
+            },
+            {
+                "100g de LÉGUMES": "Aloyau de boeuf",
+                "KCAL": "266"
+            },
+            {
+                "100g de LÉGUMES": "Andouille",
+                "KCAL": "300"
+            },
+            {
+                "100g de LÉGUMES": "Andouillette",
+                "KCAL": "320"
+            },
+            {
+                "100g de LÉGUMES": "Bacon",
+                "KCAL": "385"
+            },
+            {
+                "100g de LÉGUMES": "Bavette (boeuf)",
+                "KCAL": "200"
+            },
+            {
+                "100g de LÉGUMES": "Bécasse",
+                "KCAL": "115"
+            },
+            {
+                "100g de LÉGUMES": "Bifteck de boeuf",
+                "KCAL": "200"
+            },
+            {
+                "100g de LÉGUMES": "Bifteck de cheval",
+                "KCAL": "110"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (aiguillette)",
+                "KCAL": "200"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (aloyau)",
+                "KCAL": "266"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (araignée)",
+                "KCAL": "200"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (bavette)",
+                "KCAL": "200"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (cervelle)",
+                "KCAL": "130"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (coeur)",
+                "KCAL": "126"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (corned-beef)",
+                "KCAL": "275"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (côte)",
+                "KCAL": "260"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (culotte)",
+                "KCAL": "289"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (échine)",
+                "KCAL": "257"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (entrecôte)",
+                "KCAL": "200"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (épaule)",
+                "KCAL": "216"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (faux-filet)",
+                "KCAL": "156"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (filet)",
+                "KCAL": "180"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (foie)",
+                "KCAL": "116"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (gîte)",
+                "KCAL": "300"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (hampe)",
+                "KCAL": "200"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (langue)",
+                "KCAL": "200"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (macreuse)",
+                "KCAL": "242"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (noix)",
+                "KCAL": "184"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (onglet)",
+                "KCAL": "200"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (paleron)",
+                "KCAL": "216"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (palette)",
+                "KCAL": "242"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (plates côtes)",
+                "KCAL": "250"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (rognon)",
+                "KCAL": "125"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (rond de gîte)",
+                "KCAL": "225"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (rosbif)",
+                "KCAL": "160"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (rumsteack)",
+                "KCAL": "200"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (steack)",
+                "KCAL": "200"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (tendron)",
+                "KCAL": "300"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (tournedos)",
+                "KCAL": "200"
+            },
+            {
+                "100g de LÉGUMES": "Boeuf (tripes)",
+                "KCAL": "94"
+            },
+            {
+                "100g de LÉGUMES": "Bœuf (steak haché)",
+                "KCAL": "239"
+            },
+            {
+                "100g de LÉGUMES": "Caille",
+                "KCAL": "115"
+            },
+            {
+                "100g de LÉGUMES": "Canard",
+                "KCAL": "250"
+            },
+            {
+                "100g de LÉGUMES": "Canard sauvage",
+                "KCAL": "126"
+            },
+            {
+                "100g de LÉGUMES": "Carré de porc",
+                "KCAL": "330"
+            },
+            {
+                "100g de LÉGUMES": "Carré de veau",
+                "KCAL": "171"
+            },
+            {
+                "100g de LÉGUMES": "Cerf",
+                "KCAL": "116"
+            },
+            {
+                "100g de LÉGUMES": "Cervelas",
+                "KCAL": "320"
+            },
+            {
+                "100g de LÉGUMES": "Cervelle",
+                "KCAL": "125"
+            },
+            {
+                "100g de LÉGUMES": "Chair à saucisse",
+                "KCAL": "422"
+            },
+            {
+                "100g de LÉGUMES": "Charcuterie",
+                "KCAL": "450"
+            },
+            {
+                "100g de LÉGUMES": "Cheval (steack)",
+                "KCAL": "110"
+            },
+            {
+                "100g de LÉGUMES": "Chevreau",
+                "KCAL": "160"
+            },
+            {
+                "100g de LÉGUMES": "Chevreuil",
+                "KCAL": "120"
+            },
+            {
+                "100g de LÉGUMES": "Corned-beef",
+                "KCAL": "275"
+            },
+            {
+                "100g de LÉGUMES": "Côtelettes d’agneau",
+                "KCAL": "330"
+            },
+            {
+                "100g de LÉGUMES": "Côtes de mouton",
+                "KCAL": "300"
+            },
+            {
+                "100g de LÉGUMES": "côtes de porc",
+                "KCAL": "330"
+            },
+            {
+                "100g de LÉGUMES": "Côtes de veau",
+                "KCAL": "168"
+            },
+            {
+                "100g de LÉGUMES": "Culotte de boeuf",
+                "KCAL": "289"
+            },
+            {
+                "100g de LÉGUMES": "Culotte de veau",
+                "KCAL": "171"
+            },
+            {
+                "100g de LÉGUMES": "Dinde",
+                "KCAL": "260"
+            },
+            {
+                "100g de LÉGUMES": "Dinde",
+                "KCAL": "125"
+            },
+            {
+                "100g de LÉGUMES": "Dinde, viande rôtie",
+                "KCAL": "150"
+            },
+            {
+                "100g de LÉGUMES": "Dindonneau",
+                "KCAL": "260"
+            },
+            {
+                "100g de LÉGUMES": "Echine de boeuf",
+                "KCAL": "257"
+            },
+            {
+                "100g de LÉGUMES": "Echine de porc",
+                "KCAL": "302"
+            },
+            {
+                "100g de LÉGUMES": "Escalope de veau",
+                "KCAL": "170"
+            },
+            {
+                "100g de LÉGUMES": "Faisan",
+                "KCAL": "106"
+            },
+            {
+                "100g de LÉGUMES": "Faux-filet (boeuf)",
+                "KCAL": "360"
+            },
+            {
+                "100g de LÉGUMES": "Foie gras",
+                "KCAL": "450"
+            },
+            {
+                "100g de LÉGUMES": "Foie",
+                "KCAL": "133"
+            },
+            {
+                "100g de LÉGUMES": "Fromage de tête",
+                "KCAL": "342"
+            },
+            {
+                "100g de LÉGUMES": "Grenouille (cuisses)",
+                "KCAL": "72"
+            },
+            {
+                "100g de LÉGUMES": "Grive",
+                "KCAL": "120"
+            },
+            {
+                "100g de LÉGUMES": "Hamburger",
+                "KCAL": "560"
+            },
+            {
+                "100g de LÉGUMES": "Hot-dog (unité)",
+                "KCAL": "400"
+            },
+            {
+                "100g de LÉGUMES": "Jambon blanc cuit à l’eau",
+                "KCAL": "50"
+            },
+            {
+                "100g de LÉGUMES": "Jambon cru",
+                "KCAL": "330"
+            },
+            {
+                "100g de LÉGUMES": "Jambon cuit",
+                "KCAL": "290"
+            },
+            {
+                "100g de LÉGUMES": "Jambon de Paris",
+                "KCAL": "290"
+            },
+            {
+                "100g de LÉGUMES": "Jambon fumé",
+                "KCAL": "380"
+            },
+            {
+                "100g de LÉGUMES": "Jambonneau",
+                "KCAL": "290"
+            },
+            {
+                "100g de LÉGUMES": "Jarret de veau",
+                "KCAL": "183"
+            },
+            {
+                "100g de LÉGUMES": "Langue",
+                "KCAL": "200"
+            },
+            {
+                "100g de LÉGUMES": "Lapin de garenne",
+                "KCAL": "133"
+            },
+            {
+                "100g de LÉGUMES": "Lapin domestique",
+                "KCAL": "160"
+            },
+            {
+                "100g de LÉGUMES": "Lard fumé",
+                "KCAL": "670"
+            },
+            {
+                "100g de LÉGUMES": "Lard",
+                "KCAL": "575"
+            },
+            {
+                "100g de LÉGUMES": "Lièvre",
+                "KCAL": "100"
+            },
+            {
+                "100g de LÉGUMES": "Macreuse (boeuf)",
+                "KCAL": "242"
+            },
+            {
+                "100g de LÉGUMES": "Marcassin",
+                "KCAL": "104"
+            },
+            {
+                "100g de LÉGUMES": "Merguez",
+                "KCAL": "520"
+            },
+            {
+                "100g de LÉGUMES": "Moelle",
+                "KCAL": "605"
+            },
+            {
+                "100g de LÉGUMES": "Mortadelle",
+                "KCAL": "305"
+            },
+            {
+                "100g de LÉGUMES": "Mousse de foie",
+                "KCAL": "410"
+            },
+            {
+                "100g de LÉGUMES": "Mouton (cervelle)",
+                "KCAL": "120"
+            },
+            {
+                "100g de LÉGUMES": "Mouton (coeur)",
+                "KCAL": "157"
+            },
+            {
+                "100g de LÉGUMES": "Mouton (côtes)",
+                "KCAL": "300"
+            },
+            {
+                "100g de LÉGUMES": "Mouton (épaule)",
+                "KCAL": "289"
+            },
+            {
+                "100g de LÉGUMES": "Mouton (filet)",
+                "KCAL": "225"
+            },
+            {
+                "100g de LÉGUMES": "Mouton (foie)",
+                "KCAL": "132"
+            },
+            {
+                "100g de LÉGUMES": "Mouton (gigot)",
+                "KCAL": "250"
+            },
+            {
+                "100g de LÉGUMES": "Mouton (langue)",
+                "KCAL": "264"
+            },
+            {
+                "100g de LÉGUMES": "Mouton (rognon)",
+                "KCAL": "105"
+            },
+            {
+                "100g de LÉGUMES": "Mouton (selle)",
+                "KCAL": "250"
+            },
+            {
+                "100g de LÉGUMES": "Mouton",
+                "KCAL": "265"
+            },
+            {
+                "100g de LÉGUMES": "Museau de porc",
+                "KCAL": "342"
+            },
+            {
+                "100g de LÉGUMES": "Noix de boeuf",
+                "KCAL": "184"
+            },
+            {
+                "100g de LÉGUMES": "Noix de porc",
+                "KCAL": "289"
+            },
+            {
+                "100g de LÉGUMES": "Noix de veau",
+                "KCAL": "160"
+            },
+            {
+                "100g de LÉGUMES": "Œuf dur",
+                "KCAL": "70"
+            },
+            {
+                "100g de LÉGUMES": "Œuf au plat",
+                "KCAL": "90"
+            },
+            {
+                "100g de LÉGUMES": "Œuf poché",
+                "KCAL": "143"
+            },
+            {
+                "100g de LÉGUMES": "Oie",
+                "KCAL": "350"
+            },
+            {
+                "100g de LÉGUMES": "Pâté de campagne",
+                "KCAL": "455"
+            },
+            {
+                "100g de LÉGUMES": "Pâté de foie",
+                "KCAL": "465"
+            },
+            {
+                "100g de LÉGUMES": "Pâté de tête",
+                "KCAL": "342"
+            },
+            {
+                "100g de LÉGUMES": "Perdreau",
+                "KCAL": "115"
+            },
+            {
+                "100g de LÉGUMES": "Perdrix",
+                "KCAL": "115"
+            },
+            {
+                "100g de LÉGUMES": "Petit salé",
+                "KCAL": "330"
+            },
+            {
+                "100g de LÉGUMES": "Pied de veau",
+                "KCAL": "342"
+            },
+            {
+                "100g de LÉGUMES": "Pigeon",
+                "KCAL": "108"
+            },
+            {
+                "100g de LÉGUMES": "Pintade",
+                "KCAL": "108"
+            },
+            {
+                "100g de LÉGUMES": "Poitrine de porc",
+                "KCAL": "300"
+            },
+            {
+                "100g de LÉGUMES": "Porc (carré)",
+                "KCAL": "330"
+            },
+            {
+                "100g de LÉGUMES": "Porc (cervelle)",
+                "KCAL": "129"
+            },
+            {
+                "100g de LÉGUMES": "Porc (coeur)",
+                "KCAL": "115"
+            },
+            {
+                "100g de LÉGUMES": "Porc (côtes)",
+                "KCAL": "330"
+            },
+            {
+                "100g de LÉGUMES": "Porc (échine)",
+                "KCAL": "302"
+            },
+            {
+                "100g de LÉGUMES": "Porc (filet)",
+                "KCAL": "290"
+            },
+            {
+                "100g de LÉGUMES": "Porc (foie)",
+                "KCAL": "135"
+            },
+            {
+                "100g de LÉGUMES": "Porc (jambon fumé)",
+                "KCAL": "385"
+            },
+            {
+                "100g de LÉGUMES": "Porc (jambon)",
+                "KCAL": "300"
+            },
+            {
+                "100g de LÉGUMES": "Porc (langue)",
+                "KCAL": "207"
+            },
+            {
+                "100g de LÉGUMES": "Porc (lard fumé)",
+                "KCAL": "670"
+            },
+            {
+                "100g de LÉGUMES": "Porc (lard)",
+                "KCAL": "575"
+            },
+            {
+                "100g de LÉGUMES": "Porc (noix)",
+                "KCAL": "289"
+            },
+            {
+                "100g de LÉGUMES": "Porc (palette)",
+                "KCAL": "300"
+            },
+            {
+                "100g de LÉGUMES": "Porc (pied)",
+                "KCAL": "342"
+            },
+            {
+                "100g de LÉGUMES": "Porc (poitrine)",
+                "KCAL": "300"
+            },
+            {
+                "100g de LÉGUMES": "Porc (rognons)",
+                "KCAL": "102"
+            },
+            {
+                "100g de LÉGUMES": "Porc (rôti)",
+                "KCAL": "300"
+            },
+            {
+                "100g de LÉGUMES": "Porc (salami)",
+                "KCAL": "410"
+            },
+            {
+                "100g de LÉGUMES": "Porc (saucisse)",
+                "KCAL": "330"
+            },
+            {
+                "100g de LÉGUMES": "Porc (saucisson)",
+                "KCAL": "440"
+            },
+            {
+                "100g de LÉGUMES": "Porc (travers)",
+                "KCAL": "305"
+            },
+            {
+                "100g de LÉGUMES": "Porc",
+                "KCAL": "300"
+            },
+            {
+                "100g de LÉGUMES": "Poule",
+                "KCAL": "300"
+            },
+            {
+                "100g de LÉGUMES": "Poulet",
+                "KCAL": "150"
+            },
+            {
+                "100g de LÉGUMES": "Quasi de veau",
+                "KCAL": "171"
+            },
+            {
+                "100g de LÉGUMES": "Rillettes",
+                "KCAL": "250"
+            },
+            {
+                "100g de LÉGUMES": "Rillettes d’oie",
+                "KCAL": "464"
+            },
+            {
+                "100g de LÉGUMES": "Ris de veau",
+                "KCAL": "125"
+            },
+            {
+                "100g de LÉGUMES": "Rognons",
+                "KCAL": "120"
+            },
+            {
+                "100g de LÉGUMES": "Rond de gîte",
+                "KCAL": "225"
+            },
+            {
+                "100g de LÉGUMES": "Rosbif",
+                "KCAL": "160"
+            },
+            {
+                "100g de LÉGUMES": "Rôti de porc",
+                "KCAL": "300"
+            },
+            {
+                "100g de LÉGUMES": "Rôti de veau",
+                "KCAL": "168"
+            },
+            {
+                "100g de LÉGUMES": "Sanglier",
+                "KCAL": "104"
+            },
+            {
+                "100g de LÉGUMES": "Tartare (steack)",
+                "KCAL": "200"
+            },
+            {
+                "100g de LÉGUMES": "Tendron de boeuf",
+                "KCAL": "300"
+            },
+            {
+                "100g de LÉGUMES": "Tête de veau",
+                "KCAL": "210"
+            },
+            {
+                "100g de LÉGUMES": "Tournedos (boeuf)",
+                "KCAL": "200"
+            },
+            {
+                "100g de LÉGUMES": "Travers de porc",
+                "KCAL": "305"
+            },
+            {
+                "100g de LÉGUMES": "Tripes",
+                "KCAL": "94"
+            },
+            {
+                "100g de LÉGUMES": "Veau (aloyau)",
+                "KCAL": "175"
+            },
+            {
+                "100g de LÉGUMES": "Veau (araignée)",
+                "KCAL": "171"
+            },
+            {
+                "100g de LÉGUMES": "Veau (carré)",
+                "KCAL": "171"
+            },
+            {
+                "100g de LÉGUMES": "Veau (cervelle)",
+                "KCAL": "120"
+            },
+            {
+                "100g de LÉGUMES": "Veau (coeur)",
+                "KCAL": "127"
+            },
+            {
+                "100g de LÉGUMES": "Veau (côtes)",
+                "KCAL": "168"
+            },
+            {
+                "100g de LÉGUMES": "Veau (épaule)",
+                "KCAL": "168"
+            },
+            {
+                "100g de LÉGUMES": "Veau, escalope, poêlée",
+                "KCAL": "150"
+            },
+            {
+                "100g de LÉGUMES": "Veau (foie)",
+                "KCAL": "137"
+            },
+            {
+                "100g de LÉGUMES": "Veau (hampe)",
+                "KCAL": "200"
+            },
+            {
+                "100g de LÉGUMES": "Veau (jarret)",
+                "KCAL": "183"
+            },
+            {
+                "100g de LÉGUMES": "Veau (langue)",
+                "KCAL": "123"
+            },
+            {
+                "100g de LÉGUMES": "Veau (longe)",
+                "KCAL": "171"
+            },
+            {
+                "100g de LÉGUMES": "Veau (noix)",
+                "KCAL": "160"
+            },
+            {
+                "100g de LÉGUMES": "Veau (onglet)",
+                "KCAL": "171"
+            },
+            {
+                "100g de LÉGUMES": "Veau (pieds)",
+                "KCAL": "342"
+            },
+            {
+                "100g de LÉGUMES": "Veau (quasi)",
+                "KCAL": "171"
+            },
+            {
+                "100g de LÉGUMES": "Veau (ris)",
+                "KCAL": "116"
+            },
+            {
+                "100g de LÉGUMES": "Veau (rognon)",
+                "KCAL": "123"
+            },
+            {
+                "100g de LÉGUMES": "Veau (rôti)",
+                "KCAL": "168"
+            },
+            {
+                "100g de LÉGUMES": "Veau (tête)",
+                "KCAL": "210"
+            }
+        ]
+    },
+    {
+        "tableau": 6,
+        "en_tetes": [
+            "100g de LÉGUMES",
+            "KCAL"
+        ],
+        "lignes": [
+            [
+                "Pour 100g de LÉGUMES",
+                "KCAL"
+            ],
+            [
+                "Artichaut",
+                "40"
+            ],
+            [
+                "Asperges",
+                "26"
+            ],
+            [
+                "Aubergine",
+                "29"
+            ],
+            [
+                "Avocat",
+                "200"
+            ],
+            [
+                "Bette ou blette",
+                "33"
+            ],
+            [
+                "Betterave rouge",
+                "40"
+            ],
+            [
+                "Bouillon de légumes (1 louche)",
+                "30"
+            ],
+            [
+                "Brocolis",
+                "34"
+            ],
+            [
+                "Carde ou cardon",
+                "33"
+            ],
+            [
+                "Carotte (jus)",
+                "24"
+            ],
+            [
+                "Carotte",
+                "38"
+            ],
+            [
+                "Céleri (feuille)",
+                "20"
+            ],
+            [
+                "Céleri-rave",
+                "44"
+            ],
+            [
+                "Cêpes",
+                "28"
+            ],
+            [
+                "Champignons",
+                "28"
+            ],
+            [
+                "Chanterelles",
+                "28"
+            ],
+            [
+                "Chicorée frisée",
+                "20"
+            ],
+            [
+                "Chou brocolis",
+                "34"
+            ],
+            [
+                "Chou chinois",
+                "12"
+            ],
+            [
+                "Chou de Bruxelles",
+                "54"
+            ],
+            [
+                "Chou",
+                "28"
+            ],
+            [
+                "Choucroute",
+                "27"
+            ],
+            [
+                "Chou-fleur",
+                "30"
+            ],
+            [
+                "Chou-navet",
+                "34"
+            ],
+            [
+                "Chou-rave",
+                "40"
+            ],
+            [
+                "Chou-rouge",
+                "36"
+            ],
+            [
+                "Citron (jus)",
+                "32"
+            ],
+            [
+                "Citrouille",
+                "30"
+            ],
+            [
+                "Coeur de palmier",
+                "56"
+            ],
+            [
+                "Concombre",
+                "13"
+            ],
+            [
+                "Condiments",
+                "0"
+            ],
+            [
+                "Cornichons",
+                "13"
+            ],
+            [
+                "Courge",
+                "30"
+            ],
+            [
+                "Courgette",
+                "30"
+            ],
+            [
+                "Crème de légumes (1 louche)",
+                "200"
+            ],
+            [
+                "Cresson (soupe) (1 louche)",
+                "120"
+            ],
+            [
+                "Cresson",
+                "20"
+            ],
+            [
+                "Echalottes",
+                "75"
+            ],
+            [
+                "Endive",
+                "20"
+            ],
+            [
+                "Epinards",
+                "25"
+            ],
+            [
+                "Fenouil",
+                "20"
+            ],
+            [
+                "Fève sèche",
+                "345"
+            ],
+            [
+                "Fève",
+                "117"
+            ],
+            [
+                "Flageolets",
+                "120"
+            ],
+            [
+                "Gingembre",
+                "61"
+            ],
+            [
+                "Girolles",
+                "28"
+            ],
+            [
+                "Haricot de Lima",
+                "330"
+            ],
+            [
+                "Haricot mange-tout",
+                "40"
+            ],
+            [
+                "Haricot mungo",
+                "344"
+            ],
+            [
+                "Haricot sec (cru)",
+                "330"
+            ],
+            [
+                "Haricot sec (cuit)",
+                "120"
+            ],
+            [
+                "Haricot vert",
+                "40"
+            ],
+            [
+                "Laitue",
+                "18"
+            ],
+            [
+                "Légumes secs",
+                "330"
+            ],
+            [
+                "Légumes verts",
+                "47"
+            ],
+            [
+                "Lentilles (soupe) (1 louche)",
+                "360"
+            ],
+            [
+                "Lentilles",
+                "338"
+            ],
+            [
+                "Macédoine de légumes",
+                "72"
+            ],
+            [
+                "Mâche",
+                "36"
+            ],
+            [
+                "Maïs (conserve)",
+                "140"
+            ],
+            [
+                "Maïs (grain)",
+                "356"
+            ],
+            [
+                "Manioc (racine)",
+                "140"
+            ],
+            [
+                "Morilles",
+                "28"
+            ],
+            [
+                "Navet",
+                "35"
+            ],
+            [
+                "Oignons (soupe) (1 louche)",
+                "90"
+            ],
+            [
+                "Oignons",
+                "46"
+            ],
+            [
+                "Palmier (coeur)",
+                "56"
+            ],
+            [
+                "Panais",
+                "74"
+            ],
+            [
+                "Patate douce",
+                "110"
+            ],
+            [
+                "Petits pois",
+                "70"
+            ],
+            [
+                "Pissenlit",
+                "48"
+            ],
+            [
+                "Poireau",
+                "42"
+            ],
+            [
+                "Pois (petits pois)",
+                "70"
+            ],
+            [
+                "Pois cassés (soupe) (1 louche)",
+                "380"
+            ],
+            [
+                "Pois cassés",
+                "356"
+            ],
+            [
+                "Pois chiche",
+                "360"
+            ],
+            [
+                "Pois secs",
+                "330"
+            ],
+            [
+                "Poivron",
+                "22"
+            ],
+            [
+                "Pomme de terre (chips)",
+                "570"
+            ],
+            [
+                "Pomme de terre (flocons)",
+                "357"
+            ],
+            [
+                "Pomme de terre (frites)",
+                "420"
+            ],
+            [
+                "Pomme de terre (purée)",
+                "95"
+            ],
+            [
+                "Pomme de terre",
+                "90"
+            ],
+            [
+                "Potiron",
+                "30"
+            ],
+            [
+                "Pourpier (feuille)",
+                "15"
+            ],
+            [
+                "Pousses de bambou",
+                "35"
+            ],
+            [
+                "Radis",
+                "20"
+            ],
+            [
+                "Romaine",
+                "18"
+            ],
+            [
+                "Rutabaga",
+                "34"
+            ],
+            [
+                "Salade verte",
+                "18"
+            ],
+            [
+                "Salsifis",
+                "77"
+            ],
+            [
+                "Scarole",
+                "25"
+            ],
+            [
+                "Tétragone",
+                "25"
+            ],
+            [
+                "Tomate (concentré)",
+                "90"
+            ],
+            [
+                "Tomate (jus)",
+                "16"
+            ],
+            [
+                "Tomate (sauce)",
+                "120"
+            ],
+            [
+                "Tomate",
+                "20"
+            ],
+            [
+                "Topinambour",
+                "78"
+            ],
+            [
+                "Truffe fraîche",
+                "92"
+            ]
+        ],
+        "dataframe": [
+            {
+                "100g de LÉGUMES": "Pour 100g de LÉGUMES",
+                "KCAL": "KCAL"
+            },
+            {
+                "100g de LÉGUMES": "Artichaut",
+                "KCAL": "40"
+            },
+            {
+                "100g de LÉGUMES": "Asperges",
+                "KCAL": "26"
+            },
+            {
+                "100g de LÉGUMES": "Aubergine",
+                "KCAL": "29"
+            },
+            {
+                "100g de LÉGUMES": "Avocat",
+                "KCAL": "200"
+            },
+            {
+                "100g de LÉGUMES": "Bette ou blette",
+                "KCAL": "33"
+            },
+            {
+                "100g de LÉGUMES": "Betterave rouge",
+                "KCAL": "40"
+            },
+            {
+                "100g de LÉGUMES": "Bouillon de légumes (1 louche)",
+                "KCAL": "30"
+            },
+            {
+                "100g de LÉGUMES": "Brocolis",
+                "KCAL": "34"
+            },
+            {
+                "100g de LÉGUMES": "Carde ou cardon",
+                "KCAL": "33"
+            },
+            {
+                "100g de LÉGUMES": "Carotte (jus)",
+                "KCAL": "24"
+            },
+            {
+                "100g de LÉGUMES": "Carotte",
+                "KCAL": "38"
+            },
+            {
+                "100g de LÉGUMES": "Céleri (feuille)",
+                "KCAL": "20"
+            },
+            {
+                "100g de LÉGUMES": "Céleri-rave",
+                "KCAL": "44"
+            },
+            {
+                "100g de LÉGUMES": "Cêpes",
+                "KCAL": "28"
+            },
+            {
+                "100g de LÉGUMES": "Champignons",
+                "KCAL": "28"
+            },
+            {
+                "100g de LÉGUMES": "Chanterelles",
+                "KCAL": "28"
+            },
+            {
+                "100g de LÉGUMES": "Chicorée frisée",
+                "KCAL": "20"
+            },
+            {
+                "100g de LÉGUMES": "Chou brocolis",
+                "KCAL": "34"
+            },
+            {
+                "100g de LÉGUMES": "Chou chinois",
+                "KCAL": "12"
+            },
+            {
+                "100g de LÉGUMES": "Chou de Bruxelles",
+                "KCAL": "54"
+            },
+            {
+                "100g de LÉGUMES": "Chou",
+                "KCAL": "28"
+            },
+            {
+                "100g de LÉGUMES": "Choucroute",
+                "KCAL": "27"
+            },
+            {
+                "100g de LÉGUMES": "Chou-fleur",
+                "KCAL": "30"
+            },
+            {
+                "100g de LÉGUMES": "Chou-navet",
+                "KCAL": "34"
+            },
+            {
+                "100g de LÉGUMES": "Chou-rave",
+                "KCAL": "40"
+            },
+            {
+                "100g de LÉGUMES": "Chou-rouge",
+                "KCAL": "36"
+            },
+            {
+                "100g de LÉGUMES": "Citron (jus)",
+                "KCAL": "32"
+            },
+            {
+                "100g de LÉGUMES": "Citrouille",
+                "KCAL": "30"
+            },
+            {
+                "100g de LÉGUMES": "Coeur de palmier",
+                "KCAL": "56"
+            },
+            {
+                "100g de LÉGUMES": "Concombre",
+                "KCAL": "13"
+            },
+            {
+                "100g de LÉGUMES": "Condiments",
+                "KCAL": "0"
+            },
+            {
+                "100g de LÉGUMES": "Cornichons",
+                "KCAL": "13"
+            },
+            {
+                "100g de LÉGUMES": "Courge",
+                "KCAL": "30"
+            },
+            {
+                "100g de LÉGUMES": "Courgette",
+                "KCAL": "30"
+            },
+            {
+                "100g de LÉGUMES": "Crème de légumes (1 louche)",
+                "KCAL": "200"
+            },
+            {
+                "100g de LÉGUMES": "Cresson (soupe) (1 louche)",
+                "KCAL": "120"
+            },
+            {
+                "100g de LÉGUMES": "Cresson",
+                "KCAL": "20"
+            },
+            {
+                "100g de LÉGUMES": "Echalottes",
+                "KCAL": "75"
+            },
+            {
+                "100g de LÉGUMES": "Endive",
+                "KCAL": "20"
+            },
+            {
+                "100g de LÉGUMES": "Epinards",
+                "KCAL": "25"
+            },
+            {
+                "100g de LÉGUMES": "Fenouil",
+                "KCAL": "20"
+            },
+            {
+                "100g de LÉGUMES": "Fève sèche",
+                "KCAL": "345"
+            },
+            {
+                "100g de LÉGUMES": "Fève",
+                "KCAL": "117"
+            },
+            {
+                "100g de LÉGUMES": "Flageolets",
+                "KCAL": "120"
+            },
+            {
+                "100g de LÉGUMES": "Gingembre",
+                "KCAL": "61"
+            },
+            {
+                "100g de LÉGUMES": "Girolles",
+                "KCAL": "28"
+            },
+            {
+                "100g de LÉGUMES": "Haricot de Lima",
+                "KCAL": "330"
+            },
+            {
+                "100g de LÉGUMES": "Haricot mange-tout",
+                "KCAL": "40"
+            },
+            {
+                "100g de LÉGUMES": "Haricot mungo",
+                "KCAL": "344"
+            },
+            {
+                "100g de LÉGUMES": "Haricot sec (cru)",
+                "KCAL": "330"
+            },
+            {
+                "100g de LÉGUMES": "Haricot sec (cuit)",
+                "KCAL": "120"
+            },
+            {
+                "100g de LÉGUMES": "Haricot vert",
+                "KCAL": "40"
+            },
+            {
+                "100g de LÉGUMES": "Laitue",
+                "KCAL": "18"
+            },
+            {
+                "100g de LÉGUMES": "Légumes secs",
+                "KCAL": "330"
+            },
+            {
+                "100g de LÉGUMES": "Légumes verts",
+                "KCAL": "47"
+            },
+            {
+                "100g de LÉGUMES": "Lentilles (soupe) (1 louche)",
+                "KCAL": "360"
+            },
+            {
+                "100g de LÉGUMES": "Lentilles",
+                "KCAL": "338"
+            },
+            {
+                "100g de LÉGUMES": "Macédoine de légumes",
+                "KCAL": "72"
+            },
+            {
+                "100g de LÉGUMES": "Mâche",
+                "KCAL": "36"
+            },
+            {
+                "100g de LÉGUMES": "Maïs (conserve)",
+                "KCAL": "140"
+            },
+            {
+                "100g de LÉGUMES": "Maïs (grain)",
+                "KCAL": "356"
+            },
+            {
+                "100g de LÉGUMES": "Manioc (racine)",
+                "KCAL": "140"
+            },
+            {
+                "100g de LÉGUMES": "Morilles",
+                "KCAL": "28"
+            },
+            {
+                "100g de LÉGUMES": "Navet",
+                "KCAL": "35"
+            },
+            {
+                "100g de LÉGUMES": "Oignons (soupe) (1 louche)",
+                "KCAL": "90"
+            },
+            {
+                "100g de LÉGUMES": "Oignons",
+                "KCAL": "46"
+            },
+            {
+                "100g de LÉGUMES": "Palmier (coeur)",
+                "KCAL": "56"
+            },
+            {
+                "100g de LÉGUMES": "Panais",
+                "KCAL": "74"
+            },
+            {
+                "100g de LÉGUMES": "Patate douce",
+                "KCAL": "110"
+            },
+            {
+                "100g de LÉGUMES": "Petits pois",
+                "KCAL": "70"
+            },
+            {
+                "100g de LÉGUMES": "Pissenlit",
+                "KCAL": "48"
+            },
+            {
+                "100g de LÉGUMES": "Poireau",
+                "KCAL": "42"
+            },
+            {
+                "100g de LÉGUMES": "Pois (petits pois)",
+                "KCAL": "70"
+            },
+            {
+                "100g de LÉGUMES": "Pois cassés (soupe) (1 louche)",
+                "KCAL": "380"
+            },
+            {
+                "100g de LÉGUMES": "Pois cassés",
+                "KCAL": "356"
+            },
+            {
+                "100g de LÉGUMES": "Pois chiche",
+                "KCAL": "360"
+            },
+            {
+                "100g de LÉGUMES": "Pois secs",
+                "KCAL": "330"
+            },
+            {
+                "100g de LÉGUMES": "Poivron",
+                "KCAL": "22"
+            },
+            {
+                "100g de LÉGUMES": "Pomme de terre (chips)",
+                "KCAL": "570"
+            },
+            {
+                "100g de LÉGUMES": "Pomme de terre (flocons)",
+                "KCAL": "357"
+            },
+            {
+                "100g de LÉGUMES": "Pomme de terre (frites)",
+                "KCAL": "420"
+            },
+            {
+                "100g de LÉGUMES": "Pomme de terre (purée)",
+                "KCAL": "95"
+            },
+            {
+                "100g de LÉGUMES": "Pomme de terre",
+                "KCAL": "90"
+            },
+            {
+                "100g de LÉGUMES": "Potiron",
+                "KCAL": "30"
+            },
+            {
+                "100g de LÉGUMES": "Pourpier (feuille)",
+                "KCAL": "15"
+            },
+            {
+                "100g de LÉGUMES": "Pousses de bambou",
+                "KCAL": "35"
+            },
+            {
+                "100g de LÉGUMES": "Radis",
+                "KCAL": "20"
+            },
+            {
+                "100g de LÉGUMES": "Romaine",
+                "KCAL": "18"
+            },
+            {
+                "100g de LÉGUMES": "Rutabaga",
+                "KCAL": "34"
+            },
+            {
+                "100g de LÉGUMES": "Salade verte",
+                "KCAL": "18"
+            },
+            {
+                "100g de LÉGUMES": "Salsifis",
+                "KCAL": "77"
+            },
+            {
+                "100g de LÉGUMES": "Scarole",
+                "KCAL": "25"
+            },
+            {
+                "100g de LÉGUMES": "Tétragone",
+                "KCAL": "25"
+            },
+            {
+                "100g de LÉGUMES": "Tomate (concentré)",
+                "KCAL": "90"
+            },
+            {
+                "100g de LÉGUMES": "Tomate (jus)",
+                "KCAL": "16"
+            },
+            {
+                "100g de LÉGUMES": "Tomate (sauce)",
+                "KCAL": "120"
+            },
+            {
+                "100g de LÉGUMES": "Tomate",
+                "KCAL": "20"
+            },
+            {
+                "100g de LÉGUMES": "Topinambour",
+                "KCAL": "78"
+            },
+            {
+                "100g de LÉGUMES": "Truffe fraîche",
+                "KCAL": "92"
+            }
+        ]
+    },
+    {
+        "tableau": 7,
+        "en_tetes": [
+            "100g de LÉGUMES",
+            "KCAL"
+        ],
+        "lignes": [
+            [
+                "Pour 100g de FRUIT",
+                "KCAL"
+            ],
+            [
+                "Abricot frais",
+                "45"
+            ],
+            [
+                "Abricot jus",
+                "60"
+            ],
+            [
+                "Abricots secs",
+                "272"
+            ],
+            [
+                "Airelle",
+                "25"
+            ],
+            [
+                "Amande (unité)",
+                "10"
+            ],
+            [
+                "Amandes",
+                "634"
+            ],
+            [
+                "Ananas (conserve)",
+                "96"
+            ],
+            [
+                "Ananas frais",
+                "51"
+            ],
+            [
+                "Ananas jus",
+                "54"
+            ],
+            [
+                "Banane",
+                "90"
+            ],
+            [
+                "Banane plantain",
+                "126"
+            ],
+            [
+                "Banane sèche",
+                "290"
+            ],
+            [
+                "Brugnons",
+                "64"
+            ],
+            [
+                "Cassis",
+                "60"
+            ],
+            [
+                "Cerises",
+                "77"
+            ],
+            [
+                "Châtaignes",
+                "211"
+            ],
+            [
+                "Citron",
+                "40"
+            ],
+            [
+                "Coco (lait)",
+                "20"
+            ],
+            [
+                "Coco (noix fraîche)",
+                "371"
+            ],
+            [
+                "Coco (noix sèche)",
+                "594"
+            ],
+            [
+                "Coing",
+                "32"
+            ],
+            [
+                "Compotes",
+                "100"
+            ],
+            [
+                "Dattes",
+                "306"
+            ],
+            [
+                "Dattes “Deglet Nour”",
+                "311"
+            ],
+            [
+                "Figue",
+                "80"
+            ],
+            [
+                "Figue sèche",
+                "270"
+            ],
+            [
+                "Fraises",
+                "36"
+            ],
+            [
+                "Framboises",
+                "40"
+            ],
+            [
+                "Framboise (jus)",
+                "44"
+            ],
+            [
+                "Fruit de la passion",
+                "100"
+            ],
+            [
+                "Fruits (compote)",
+                "100"
+            ],
+            [
+                "Fruits (jus 100%)",
+                "48"
+            ],
+            [
+                "Fruits (nectars)",
+                "70"
+            ],
+            [
+                "Fruits au sirop",
+                "100"
+            ],
+            [
+                "Fruits confits",
+                "380"
+            ],
+            [
+                "Fruits secs",
+                "300"
+            ],
+            [
+                "Gelée de fruits",
+                "280"
+            ],
+            [
+                "Goyave",
+                "60"
+            ],
+            [
+                "Grenade",
+                "64"
+            ],
+            [
+                "Groseilles",
+                "30"
+            ],
+            [
+                "Igname",
+                "100"
+            ],
+            [
+                "Jujube",
+                "135"
+            ],
+            [
+                "Jus de fruit 100%",
+                "48"
+            ],
+            [
+                "Kaki",
+                "63"
+            ],
+            [
+                "Kiwi",
+                "53"
+            ],
+            [
+                "Limette",
+                "51"
+            ],
+            [
+                "Litchis",
+                "68"
+            ],
+            [
+                "Macédoine de fruits",
+                "100"
+            ],
+            [
+                "Mandarine",
+                "40"
+            ],
+            [
+                "Mangue",
+                "62"
+            ],
+            [
+                "Marrons",
+                "211"
+            ],
+            [
+                "Marrons (crème)",
+                "298"
+            ],
+            [
+                "Marrons (purée)",
+                "211"
+            ],
+            [
+                "Marrons glacés",
+                "305"
+            ],
+            [
+                "Melon",
+                "31"
+            ],
+            [
+                "Mirabelles",
+                "58"
+            ],
+            [
+                "Mousserons",
+                "28"
+            ],
+            [
+                "Mûres",
+                "57"
+            ],
+            [
+                "Myrtilles",
+                "16"
+            ],
+            [
+                "Nectars de fruits",
+                "70"
+            ],
+            [
+                "Nèfles",
+                "97"
+            ],
+            [
+                "Noisette (unité)",
+                "10"
+            ],
+            [
+                "Noisettes",
+                "656"
+            ],
+            [
+                "Noix",
+                "660"
+            ],
+            [
+                "Noix (unité)",
+                "20"
+            ],
+            [
+                "Noix de cajou",
+                "612"
+            ],
+            [
+                "Noix de coco",
+                "371"
+            ],
+            [
+                "Orange",
+                "40"
+            ],
+            [
+                "Orange jus",
+                "42"
+            ],
+            [
+                "Pamplemousse",
+                "40"
+            ],
+            [
+                "Pamplemousse jus",
+                "42"
+            ],
+            [
+                "Papaye",
+                "44"
+            ],
+            [
+                "Pastèque",
+                "30"
+            ],
+            [
+                "Pêche",
+                "47"
+            ],
+            [
+                "Pêche (jus)",
+                "52"
+            ],
+            [
+                "Pêches au sirop",
+                "70"
+            ],
+            [
+                "Poire",
+                "61"
+            ],
+            [
+                "Poire (jus)",
+                "60"
+            ],
+            [
+                "Pomme",
+                "52"
+            ],
+            [
+                "Pomme (jus)",
+                "47"
+            ],
+            [
+                "Prune",
+                "56"
+            ],
+            [
+                "Prune (jus)",
+                "68"
+            ],
+            [
+                "Pruneaux",
+                "290"
+            ],
+            [
+                "Quetsches",
+                "56"
+            ],
+            [
+                "Raisin",
+                "81"
+            ],
+            [
+                "Raisin jus",
+                "76"
+            ],
+            [
+                "Raisins secs",
+                "324"
+            ],
+            [
+                "Rhubarbe",
+                "16"
+            ]
+        ],
+        "dataframe": [
+            {
+                "100g de LÉGUMES": "Pour 100g de FRUIT",
+                "KCAL": "KCAL"
+            },
+            {
+                "100g de LÉGUMES": "Abricot frais",
+                "KCAL": "45"
+            },
+            {
+                "100g de LÉGUMES": "Abricot jus",
+                "KCAL": "60"
+            },
+            {
+                "100g de LÉGUMES": "Abricots secs",
+                "KCAL": "272"
+            },
+            {
+                "100g de LÉGUMES": "Airelle",
+                "KCAL": "25"
+            },
+            {
+                "100g de LÉGUMES": "Amande (unité)",
+                "KCAL": "10"
+            },
+            {
+                "100g de LÉGUMES": "Amandes",
+                "KCAL": "634"
+            },
+            {
+                "100g de LÉGUMES": "Ananas (conserve)",
+                "KCAL": "96"
+            },
+            {
+                "100g de LÉGUMES": "Ananas frais",
+                "KCAL": "51"
+            },
+            {
+                "100g de LÉGUMES": "Ananas jus",
+                "KCAL": "54"
+            },
+            {
+                "100g de LÉGUMES": "Banane",
+                "KCAL": "90"
+            },
+            {
+                "100g de LÉGUMES": "Banane plantain",
+                "KCAL": "126"
+            },
+            {
+                "100g de LÉGUMES": "Banane sèche",
+                "KCAL": "290"
+            },
+            {
+                "100g de LÉGUMES": "Brugnons",
+                "KCAL": "64"
+            },
+            {
+                "100g de LÉGUMES": "Cassis",
+                "KCAL": "60"
+            },
+            {
+                "100g de LÉGUMES": "Cerises",
+                "KCAL": "77"
+            },
+            {
+                "100g de LÉGUMES": "Châtaignes",
+                "KCAL": "211"
+            },
+            {
+                "100g de LÉGUMES": "Citron",
+                "KCAL": "40"
+            },
+            {
+                "100g de LÉGUMES": "Coco (lait)",
+                "KCAL": "20"
+            },
+            {
+                "100g de LÉGUMES": "Coco (noix fraîche)",
+                "KCAL": "371"
+            },
+            {
+                "100g de LÉGUMES": "Coco (noix sèche)",
+                "KCAL": "594"
+            },
+            {
+                "100g de LÉGUMES": "Coing",
+                "KCAL": "32"
+            },
+            {
+                "100g de LÉGUMES": "Compotes",
+                "KCAL": "100"
+            },
+            {
+                "100g de LÉGUMES": "Dattes",
+                "KCAL": "306"
+            },
+            {
+                "100g de LÉGUMES": "Dattes “Deglet Nour”",
+                "KCAL": "311"
+            },
+            {
+                "100g de LÉGUMES": "Figue",
+                "KCAL": "80"
+            },
+            {
+                "100g de LÉGUMES": "Figue sèche",
+                "KCAL": "270"
+            },
+            {
+                "100g de LÉGUMES": "Fraises",
+                "KCAL": "36"
+            },
+            {
+                "100g de LÉGUMES": "Framboises",
+                "KCAL": "40"
+            },
+            {
+                "100g de LÉGUMES": "Framboise (jus)",
+                "KCAL": "44"
+            },
+            {
+                "100g de LÉGUMES": "Fruit de la passion",
+                "KCAL": "100"
+            },
+            {
+                "100g de LÉGUMES": "Fruits (compote)",
+                "KCAL": "100"
+            },
+            {
+                "100g de LÉGUMES": "Fruits (jus 100%)",
+                "KCAL": "48"
+            },
+            {
+                "100g de LÉGUMES": "Fruits (nectars)",
+                "KCAL": "70"
+            },
+            {
+                "100g de LÉGUMES": "Fruits au sirop",
+                "KCAL": "100"
+            },
+            {
+                "100g de LÉGUMES": "Fruits confits",
+                "KCAL": "380"
+            },
+            {
+                "100g de LÉGUMES": "Fruits secs",
+                "KCAL": "300"
+            },
+            {
+                "100g de LÉGUMES": "Gelée de fruits",
+                "KCAL": "280"
+            },
+            {
+                "100g de LÉGUMES": "Goyave",
+                "KCAL": "60"
+            },
+            {
+                "100g de LÉGUMES": "Grenade",
+                "KCAL": "64"
+            },
+            {
+                "100g de LÉGUMES": "Groseilles",
+                "KCAL": "30"
+            },
+            {
+                "100g de LÉGUMES": "Igname",
+                "KCAL": "100"
+            },
+            {
+                "100g de LÉGUMES": "Jujube",
+                "KCAL": "135"
+            },
+            {
+                "100g de LÉGUMES": "Jus de fruit 100%",
+                "KCAL": "48"
+            },
+            {
+                "100g de LÉGUMES": "Kaki",
+                "KCAL": "63"
+            },
+            {
+                "100g de LÉGUMES": "Kiwi",
+                "KCAL": "53"
+            },
+            {
+                "100g de LÉGUMES": "Limette",
+                "KCAL": "51"
+            },
+            {
+                "100g de LÉGUMES": "Litchis",
+                "KCAL": "68"
+            },
+            {
+                "100g de LÉGUMES": "Macédoine de fruits",
+                "KCAL": "100"
+            },
+            {
+                "100g de LÉGUMES": "Mandarine",
+                "KCAL": "40"
+            },
+            {
+                "100g de LÉGUMES": "Mangue",
+                "KCAL": "62"
+            },
+            {
+                "100g de LÉGUMES": "Marrons",
+                "KCAL": "211"
+            },
+            {
+                "100g de LÉGUMES": "Marrons (crème)",
+                "KCAL": "298"
+            },
+            {
+                "100g de LÉGUMES": "Marrons (purée)",
+                "KCAL": "211"
+            },
+            {
+                "100g de LÉGUMES": "Marrons glacés",
+                "KCAL": "305"
+            },
+            {
+                "100g de LÉGUMES": "Melon",
+                "KCAL": "31"
+            },
+            {
+                "100g de LÉGUMES": "Mirabelles",
+                "KCAL": "58"
+            },
+            {
+                "100g de LÉGUMES": "Mousserons",
+                "KCAL": "28"
+            },
+            {
+                "100g de LÉGUMES": "Mûres",
+                "KCAL": "57"
+            },
+            {
+                "100g de LÉGUMES": "Myrtilles",
+                "KCAL": "16"
+            },
+            {
+                "100g de LÉGUMES": "Nectars de fruits",
+                "KCAL": "70"
+            },
+            {
+                "100g de LÉGUMES": "Nèfles",
+                "KCAL": "97"
+            },
+            {
+                "100g de LÉGUMES": "Noisette (unité)",
+                "KCAL": "10"
+            },
+            {
+                "100g de LÉGUMES": "Noisettes",
+                "KCAL": "656"
+            },
+            {
+                "100g de LÉGUMES": "Noix",
+                "KCAL": "660"
+            },
+            {
+                "100g de LÉGUMES": "Noix (unité)",
+                "KCAL": "20"
+            },
+            {
+                "100g de LÉGUMES": "Noix de cajou",
+                "KCAL": "612"
+            },
+            {
+                "100g de LÉGUMES": "Noix de coco",
+                "KCAL": "371"
+            },
+            {
+                "100g de LÉGUMES": "Orange",
+                "KCAL": "40"
+            },
+            {
+                "100g de LÉGUMES": "Orange jus",
+                "KCAL": "42"
+            },
+            {
+                "100g de LÉGUMES": "Pamplemousse",
+                "KCAL": "40"
+            },
+            {
+                "100g de LÉGUMES": "Pamplemousse jus",
+                "KCAL": "42"
+            },
+            {
+                "100g de LÉGUMES": "Papaye",
+                "KCAL": "44"
+            },
+            {
+                "100g de LÉGUMES": "Pastèque",
+                "KCAL": "30"
+            },
+            {
+                "100g de LÉGUMES": "Pêche",
+                "KCAL": "47"
+            },
+            {
+                "100g de LÉGUMES": "Pêche (jus)",
+                "KCAL": "52"
+            },
+            {
+                "100g de LÉGUMES": "Pêches au sirop",
+                "KCAL": "70"
+            },
+            {
+                "100g de LÉGUMES": "Poire",
+                "KCAL": "61"
+            },
+            {
+                "100g de LÉGUMES": "Poire (jus)",
+                "KCAL": "60"
+            },
+            {
+                "100g de LÉGUMES": "Pomme",
+                "KCAL": "52"
+            },
+            {
+                "100g de LÉGUMES": "Pomme (jus)",
+                "KCAL": "47"
+            },
+            {
+                "100g de LÉGUMES": "Prune",
+                "KCAL": "56"
+            },
+            {
+                "100g de LÉGUMES": "Prune (jus)",
+                "KCAL": "68"
+            },
+            {
+                "100g de LÉGUMES": "Pruneaux",
+                "KCAL": "290"
+            },
+            {
+                "100g de LÉGUMES": "Quetsches",
+                "KCAL": "56"
+            },
+            {
+                "100g de LÉGUMES": "Raisin",
+                "KCAL": "81"
+            },
+            {
+                "100g de LÉGUMES": "Raisin jus",
+                "KCAL": "76"
+            },
+            {
+                "100g de LÉGUMES": "Raisins secs",
+                "KCAL": "324"
+            },
+            {
+                "100g de LÉGUMES": "Rhubarbe",
+                "KCAL": "16"
+            }
+        ]
+    },
+    {
+        "tableau": 8,
+        "en_tetes": [
+            "100g de LÉGUMES",
+            "KCAL"
+        ],
+        "lignes": [
+            [
+                "Pour 100g",
+                "KCAL"
+            ],
+            [
+                "Babybel",
+                "335"
+            ],
+            [
+                "Beaufort",
+                "396"
+            ],
+            [
+                "Beurre",
+                "760"
+            ],
+            [
+                "Beurre (1 noix)",
+                "70"
+            ],
+            [
+                "Beurre allégé",
+                "410"
+            ],
+            [
+                "Beurre salé",
+                "760"
+            ],
+            [
+                "Bleus",
+                "410"
+            ],
+            [
+                "Bonbel",
+                "353"
+            ],
+            [
+                "Boursault",
+                "354"
+            ],
+            [
+                "Boursin",
+                "414"
+            ],
+            [
+                "Brie",
+                "263"
+            ],
+            [
+                "Camembert",
+                "312"
+            ],
+            [
+                "Cantal",
+                "386"
+            ],
+            [
+                "Carré de l’Est",
+                "362"
+            ],
+            [
+                "Chavignols",
+                "330"
+            ],
+            [
+                "Cheddar",
+                "382"
+            ],
+            [
+                "Chèvre",
+                "330"
+            ],
+            [
+                "Comté",
+                "396"
+            ],
+            [
+                "Coulommiers",
+                "278"
+            ],
+            [
+                "Crème de gruyère",
+                "280"
+            ],
+            [
+                "Crème fraîche",
+                "300"
+            ],
+            [
+                "Crème fraîche (1 c. à soupe)",
+                "60"
+            ],
+            [
+                "Crottins (fromage)",
+                "80"
+            ],
+            [
+                "Demisel",
+                "174"
+            ],
+            [
+                "Edam",
+                "353"
+            ],
+            [
+                "Emmenthal",
+                "415"
+            ],
+            [
+                "Fromage blanc à 0% aux fruits",
+                "80"
+            ],
+            [
+                "Fromage blanc à 0% MG",
+                "44"
+            ],
+            [
+                "Fromage blanc à 20% MG",
+                "80"
+            ],
+            [
+                "Fromage blanc à 40% MG",
+                "116"
+            ],
+            [
+                "Gorgonzola",
+                "405"
+            ],
+            [
+                "Gouda",
+                "353"
+            ],
+            [
+                "Gruyère",
+                "392"
+            ],
+            [
+                "Hollande",
+                "353"
+            ],
+            [
+                "Kéfir",
+                "44"
+            ],
+            [
+                "Lait 1/2 écrémé",
+                "49"
+            ],
+            [
+                "Lait concentré",
+                "130"
+            ],
+            [
+                "Lait concentré sucré",
+                "330"
+            ],
+            [
+                "Lait écrémé",
+                "34"
+            ],
+            [
+                "Lait écrémé (poudre)",
+                "375"
+            ],
+            [
+                "Lait entier",
+                "65"
+            ],
+            [
+                "Lait entier (poudre)",
+                "482"
+            ],
+            [
+                "Margarine (1 noix)",
+                "75"
+            ],
+            [
+                "Margarine",
+                "755"
+            ],
+            [
+                "Maroilles",
+                "420"
+            ],
+            [
+                "Mimolette",
+                "344"
+            ],
+            [
+                "Morbier",
+                "300"
+            ],
+            [
+                "Mozzarelle",
+                "332"
+            ],
+            [
+                "Munster",
+                "320"
+            ],
+            [
+                "Parmesan",
+                "393"
+            ],
+            [
+                "Pavé d’Auge",
+                "300"
+            ],
+            [
+                "Petitsuisse (40 %)",
+                "146"
+            ],
+            [
+                "Petitsuisse (60 %)",
+                "236"
+            ],
+            [
+                "PontLévêque",
+                "300"
+            ],
+            [
+                "Portsalut",
+                "362"
+            ],
+            [
+                "Pyrénées",
+                "365"
+            ],
+            [
+                "Reblochon",
+                "354"
+            ],
+            [
+                "Roquefort",
+                "405"
+            ],
+            [
+                "Rouy",
+                "362"
+            ],
+            [
+                "SaintFlorentin",
+                "312"
+            ],
+            [
+                "SaintMarcellin",
+                "228"
+            ],
+            [
+                "SaintNectaire",
+                "354"
+            ],
+            [
+                "SaintPaulin",
+                "365"
+            ],
+            [
+                "Tartare (portion 20 g)",
+                "69"
+            ],
+            [
+                "Tomme",
+                "354"
+            ],
+            [
+                "Yaourt à 0% (unité)",
+                "44"
+            ],
+            [
+                "Yaourt à 0% sucré",
+                "80"
+            ],
+            [
+                "Yaourt aromatisé",
+                "120"
+            ],
+            [
+                "Yaourt au chocolat",
+                "140"
+            ],
+            [
+                "Yaourt aux fruits",
+                "100"
+            ],
+            [
+                "Yaourt nature (unité)",
+                "55"
+            ]
+        ],
+        "dataframe": [
+            {
+                "100g de LÉGUMES": "Pour 100g",
+                "KCAL": "KCAL"
+            },
+            {
+                "100g de LÉGUMES": "Babybel",
+                "KCAL": "335"
+            },
+            {
+                "100g de LÉGUMES": "Beaufort",
+                "KCAL": "396"
+            },
+            {
+                "100g de LÉGUMES": "Beurre",
+                "KCAL": "760"
+            },
+            {
+                "100g de LÉGUMES": "Beurre (1 noix)",
+                "KCAL": "70"
+            },
+            {
+                "100g de LÉGUMES": "Beurre allégé",
+                "KCAL": "410"
+            },
+            {
+                "100g de LÉGUMES": "Beurre salé",
+                "KCAL": "760"
+            },
+            {
+                "100g de LÉGUMES": "Bleus",
+                "KCAL": "410"
+            },
+            {
+                "100g de LÉGUMES": "Bonbel",
+                "KCAL": "353"
+            },
+            {
+                "100g de LÉGUMES": "Boursault",
+                "KCAL": "354"
+            },
+            {
+                "100g de LÉGUMES": "Boursin",
+                "KCAL": "414"
+            },
+            {
+                "100g de LÉGUMES": "Brie",
+                "KCAL": "263"
+            },
+            {
+                "100g de LÉGUMES": "Camembert",
+                "KCAL": "312"
+            },
+            {
+                "100g de LÉGUMES": "Cantal",
+                "KCAL": "386"
+            },
+            {
+                "100g de LÉGUMES": "Carré de l’Est",
+                "KCAL": "362"
+            },
+            {
+                "100g de LÉGUMES": "Chavignols",
+                "KCAL": "330"
+            },
+            {
+                "100g de LÉGUMES": "Cheddar",
+                "KCAL": "382"
+            },
+            {
+                "100g de LÉGUMES": "Chèvre",
+                "KCAL": "330"
+            },
+            {
+                "100g de LÉGUMES": "Comté",
+                "KCAL": "396"
+            },
+            {
+                "100g de LÉGUMES": "Coulommiers",
+                "KCAL": "278"
+            },
+            {
+                "100g de LÉGUMES": "Crème de gruyère",
+                "KCAL": "280"
+            },
+            {
+                "100g de LÉGUMES": "Crème fraîche",
+                "KCAL": "300"
+            },
+            {
+                "100g de LÉGUMES": "Crème fraîche (1 c. à soupe)",
+                "KCAL": "60"
+            },
+            {
+                "100g de LÉGUMES": "Crottins (fromage)",
+                "KCAL": "80"
+            },
+            {
+                "100g de LÉGUMES": "Demisel",
+                "KCAL": "174"
+            },
+            {
+                "100g de LÉGUMES": "Edam",
+                "KCAL": "353"
+            },
+            {
+                "100g de LÉGUMES": "Emmenthal",
+                "KCAL": "415"
+            },
+            {
+                "100g de LÉGUMES": "Fromage blanc à 0% aux fruits",
+                "KCAL": "80"
+            },
+            {
+                "100g de LÉGUMES": "Fromage blanc à 0% MG",
+                "KCAL": "44"
+            },
+            {
+                "100g de LÉGUMES": "Fromage blanc à 20% MG",
+                "KCAL": "80"
+            },
+            {
+                "100g de LÉGUMES": "Fromage blanc à 40% MG",
+                "KCAL": "116"
+            },
+            {
+                "100g de LÉGUMES": "Gorgonzola",
+                "KCAL": "405"
+            },
+            {
+                "100g de LÉGUMES": "Gouda",
+                "KCAL": "353"
+            },
+            {
+                "100g de LÉGUMES": "Gruyère",
+                "KCAL": "392"
+            },
+            {
+                "100g de LÉGUMES": "Hollande",
+                "KCAL": "353"
+            },
+            {
+                "100g de LÉGUMES": "Kéfir",
+                "KCAL": "44"
+            },
+            {
+                "100g de LÉGUMES": "Lait 1/2 écrémé",
+                "KCAL": "49"
+            },
+            {
+                "100g de LÉGUMES": "Lait concentré",
+                "KCAL": "130"
+            },
+            {
+                "100g de LÉGUMES": "Lait concentré sucré",
+                "KCAL": "330"
+            },
+            {
+                "100g de LÉGUMES": "Lait écrémé",
+                "KCAL": "34"
+            },
+            {
+                "100g de LÉGUMES": "Lait écrémé (poudre)",
+                "KCAL": "375"
+            },
+            {
+                "100g de LÉGUMES": "Lait entier",
+                "KCAL": "65"
+            },
+            {
+                "100g de LÉGUMES": "Lait entier (poudre)",
+                "KCAL": "482"
+            },
+            {
+                "100g de LÉGUMES": "Margarine (1 noix)",
+                "KCAL": "75"
+            },
+            {
+                "100g de LÉGUMES": "Margarine",
+                "KCAL": "755"
+            },
+            {
+                "100g de LÉGUMES": "Maroilles",
+                "KCAL": "420"
+            },
+            {
+                "100g de LÉGUMES": "Mimolette",
+                "KCAL": "344"
+            },
+            {
+                "100g de LÉGUMES": "Morbier",
+                "KCAL": "300"
+            },
+            {
+                "100g de LÉGUMES": "Mozzarelle",
+                "KCAL": "332"
+            },
+            {
+                "100g de LÉGUMES": "Munster",
+                "KCAL": "320"
+            },
+            {
+                "100g de LÉGUMES": "Parmesan",
+                "KCAL": "393"
+            },
+            {
+                "100g de LÉGUMES": "Pavé d’Auge",
+                "KCAL": "300"
+            },
+            {
+                "100g de LÉGUMES": "Petitsuisse (40 %)",
+                "KCAL": "146"
+            },
+            {
+                "100g de LÉGUMES": "Petitsuisse (60 %)",
+                "KCAL": "236"
+            },
+            {
+                "100g de LÉGUMES": "PontLévêque",
+                "KCAL": "300"
+            },
+            {
+                "100g de LÉGUMES": "Portsalut",
+                "KCAL": "362"
+            },
+            {
+                "100g de LÉGUMES": "Pyrénées",
+                "KCAL": "365"
+            },
+            {
+                "100g de LÉGUMES": "Reblochon",
+                "KCAL": "354"
+            },
+            {
+                "100g de LÉGUMES": "Roquefort",
+                "KCAL": "405"
+            },
+            {
+                "100g de LÉGUMES": "Rouy",
+                "KCAL": "362"
+            },
+            {
+                "100g de LÉGUMES": "SaintFlorentin",
+                "KCAL": "312"
+            },
+            {
+                "100g de LÉGUMES": "SaintMarcellin",
+                "KCAL": "228"
+            },
+            {
+                "100g de LÉGUMES": "SaintNectaire",
+                "KCAL": "354"
+            },
+            {
+                "100g de LÉGUMES": "SaintPaulin",
+                "KCAL": "365"
+            },
+            {
+                "100g de LÉGUMES": "Tartare (portion 20 g)",
+                "KCAL": "69"
+            },
+            {
+                "100g de LÉGUMES": "Tomme",
+                "KCAL": "354"
+            },
+            {
+                "100g de LÉGUMES": "Yaourt à 0% (unité)",
+                "KCAL": "44"
+            },
+            {
+                "100g de LÉGUMES": "Yaourt à 0% sucré",
+                "KCAL": "80"
+            },
+            {
+                "100g de LÉGUMES": "Yaourt aromatisé",
+                "KCAL": "120"
+            },
+            {
+                "100g de LÉGUMES": "Yaourt au chocolat",
+                "KCAL": "140"
+            },
+            {
+                "100g de LÉGUMES": "Yaourt aux fruits",
+                "KCAL": "100"
+            },
+            {
+                "100g de LÉGUMES": "Yaourt nature (unité)",
+                "KCAL": "55"
+            }
+        ]
+    },
+    {
+        "tableau": 9,
+        "en_tetes": [
+            "100g de LÉGUMES",
+            "KCAL"
+        ],
+        "lignes": [
+            [
+                "Pour 100g",
+                "KCAL"
+            ],
+            [
+                "Huile d’arachides",
+                "900"
+            ],
+            [
+                "Beurre",
+                "760"
+            ],
+            [
+                "Beurre (1 noix)",
+                "70"
+            ],
+            [
+                "Beurre allégé",
+                "410"
+            ],
+            [
+                "Beurre salé",
+                "760"
+            ],
+            [
+                "Huile de colza",
+                "900"
+            ],
+            [
+                "Graisse d’oie (1 cuil. soupe)",
+                "180"
+            ],
+            [
+                "Huile de paraffine",
+                "0"
+            ],
+            [
+                "Margarine",
+                "755"
+            ],
+            [
+                "Margarine (1 noisette)",
+                "75"
+            ],
+            [
+                "Huile d’olives",
+                "900"
+            ],
+            [
+                "Saindoux",
+                "850"
+            ],
+            [
+                "Huile de soja",
+                "900"
+            ],
+            [
+                "Huile de tournesol",
+                "900"
+            ],
+            [
+                "Végétaline",
+                "900"
+            ]
+        ],
+        "dataframe": [
+            {
+                "100g de LÉGUMES": "Pour 100g",
+                "KCAL": "KCAL"
+            },
+            {
+                "100g de LÉGUMES": "Huile d’arachides",
+                "KCAL": "900"
+            },
+            {
+                "100g de LÉGUMES": "Beurre",
+                "KCAL": "760"
+            },
+            {
+                "100g de LÉGUMES": "Beurre (1 noix)",
+                "KCAL": "70"
+            },
+            {
+                "100g de LÉGUMES": "Beurre allégé",
+                "KCAL": "410"
+            },
+            {
+                "100g de LÉGUMES": "Beurre salé",
+                "KCAL": "760"
+            },
+            {
+                "100g de LÉGUMES": "Huile de colza",
+                "KCAL": "900"
+            },
+            {
+                "100g de LÉGUMES": "Graisse d’oie (1 cuil. soupe)",
+                "KCAL": "180"
+            },
+            {
+                "100g de LÉGUMES": "Huile de paraffine",
+                "KCAL": "0"
+            },
+            {
+                "100g de LÉGUMES": "Margarine",
+                "KCAL": "755"
+            },
+            {
+                "100g de LÉGUMES": "Margarine (1 noisette)",
+                "KCAL": "75"
+            },
+            {
+                "100g de LÉGUMES": "Huile d’olives",
+                "KCAL": "900"
+            },
+            {
+                "100g de LÉGUMES": "Saindoux",
+                "KCAL": "850"
+            },
+            {
+                "100g de LÉGUMES": "Huile de soja",
+                "KCAL": "900"
+            },
+            {
+                "100g de LÉGUMES": "Huile de tournesol",
+                "KCAL": "900"
+            },
+            {
+                "100g de LÉGUMES": "Végétaline",
+                "KCAL": "900"
+            }
+        ]
+    },
+    {
+        "tableau": 10,
+        "en_tetes": [
+            "100g de LÉGUMES",
+            "KCAL"
+        ],
+        "lignes": [
+            [
+                "Pour 100g",
+                "KCAL"
+            ],
+            [
+                "Baguette (unité)",
+                "510"
+            ],
+            [
+                "Biscotte (unité)",
+                "39"
+            ],
+            [
+                "Biscottes",
+                "390"
+            ],
+            [
+                "Biscottes au gluten",
+                "406"
+            ],
+            [
+                "Biscottes sans sel",
+                "390"
+            ],
+            [
+                "Chapelure",
+                "382"
+            ],
+            [
+                "Ficelle (unité)",
+                "382"
+            ],
+            [
+                "Flocons d’avoine nature",
+                "120"
+            ],
+            [
+                "Friand (unité)",
+                "370"
+            ],
+            [
+                "Gressins",
+                "350"
+            ],
+            [
+                "Pain azyme",
+                "255"
+            ],
+            [
+                "Pain bis",
+                "255"
+            ],
+            [
+                "Pain blanc",
+                "255"
+            ],
+            [
+                "Pain brioché",
+                "267"
+            ],
+            [
+                "Pain complet",
+                "230"
+            ],
+            [
+                "Pain d’épice",
+                "350"
+            ],
+            [
+                "Pain de mie",
+                "284"
+            ],
+            [
+                "Pain de seigle",
+                "241"
+            ],
+            [
+                "Pain de son",
+                "257"
+            ],
+            [
+                "Pain grillé",
+                "416"
+            ],
+            [
+                "Pain viennois",
+                "258"
+            ],
+            [
+                "Pâtes natures",
+                "90"
+            ],
+            [
+                "Quiche (unité)",
+                "340"
+            ],
+            [
+                "Riz blanc cuit",
+                "90"
+            ],
+            [
+                "Riz basmati cuit",
+                "90"
+            ],
+            [
+                "Riz complet cuit",
+                "98"
+            ],
+            [
+                "Sandwich (gruyère)",
+                "480"
+            ],
+            [
+                "Sandwich (jambon)",
+                "430"
+            ],
+            [
+                "Sandwich (rillettes)",
+                "580"
+            ],
+            [
+                "Sandwich (saucisson)",
+                "530"
+            ],
+            [
+                "Sandwich (thon)",
+                "450"
+            ],
+            [
+                "Sandwich (viande)",
+                "450"
+            ],
+            [
+                "Semoule nature",
+                "130"
+            ]
+        ],
+        "dataframe": [
+            {
+                "100g de LÉGUMES": "Pour 100g",
+                "KCAL": "KCAL"
+            },
+            {
+                "100g de LÉGUMES": "Baguette (unité)",
+                "KCAL": "510"
+            },
+            {
+                "100g de LÉGUMES": "Biscotte (unité)",
+                "KCAL": "39"
+            },
+            {
+                "100g de LÉGUMES": "Biscottes",
+                "KCAL": "390"
+            },
+            {
+                "100g de LÉGUMES": "Biscottes au gluten",
+                "KCAL": "406"
+            },
+            {
+                "100g de LÉGUMES": "Biscottes sans sel",
+                "KCAL": "390"
+            },
+            {
+                "100g de LÉGUMES": "Chapelure",
+                "KCAL": "382"
+            },
+            {
+                "100g de LÉGUMES": "Ficelle (unité)",
+                "KCAL": "382"
+            },
+            {
+                "100g de LÉGUMES": "Flocons d’avoine nature",
+                "KCAL": "120"
+            },
+            {
+                "100g de LÉGUMES": "Friand (unité)",
+                "KCAL": "370"
+            },
+            {
+                "100g de LÉGUMES": "Gressins",
+                "KCAL": "350"
+            },
+            {
+                "100g de LÉGUMES": "Pain azyme",
+                "KCAL": "255"
+            },
+            {
+                "100g de LÉGUMES": "Pain bis",
+                "KCAL": "255"
+            },
+            {
+                "100g de LÉGUMES": "Pain blanc",
+                "KCAL": "255"
+            },
+            {
+                "100g de LÉGUMES": "Pain brioché",
+                "KCAL": "267"
+            },
+            {
+                "100g de LÉGUMES": "Pain complet",
+                "KCAL": "230"
+            },
+            {
+                "100g de LÉGUMES": "Pain d’épice",
+                "KCAL": "350"
+            },
+            {
+                "100g de LÉGUMES": "Pain de mie",
+                "KCAL": "284"
+            },
+            {
+                "100g de LÉGUMES": "Pain de seigle",
+                "KCAL": "241"
+            },
+            {
+                "100g de LÉGUMES": "Pain de son",
+                "KCAL": "257"
+            },
+            {
+                "100g de LÉGUMES": "Pain grillé",
+                "KCAL": "416"
+            },
+            {
+                "100g de LÉGUMES": "Pain viennois",
+                "KCAL": "258"
+            },
+            {
+                "100g de LÉGUMES": "Pâtes natures",
+                "KCAL": "90"
+            },
+            {
+                "100g de LÉGUMES": "Quiche (unité)",
+                "KCAL": "340"
+            },
+            {
+                "100g de LÉGUMES": "Riz blanc cuit",
+                "KCAL": "90"
+            },
+            {
+                "100g de LÉGUMES": "Riz basmati cuit",
+                "KCAL": "90"
+            },
+            {
+                "100g de LÉGUMES": "Riz complet cuit",
+                "KCAL": "98"
+            },
+            {
+                "100g de LÉGUMES": "Sandwich (gruyère)",
+                "KCAL": "480"
+            },
+            {
+                "100g de LÉGUMES": "Sandwich (jambon)",
+                "KCAL": "430"
+            },
+            {
+                "100g de LÉGUMES": "Sandwich (rillettes)",
+                "KCAL": "580"
+            },
+            {
+                "100g de LÉGUMES": "Sandwich (saucisson)",
+                "KCAL": "530"
+            },
+            {
+                "100g de LÉGUMES": "Sandwich (thon)",
+                "KCAL": "450"
+            },
+            {
+                "100g de LÉGUMES": "Sandwich (viande)",
+                "KCAL": "450"
+            },
+            {
+                "100g de LÉGUMES": "Semoule nature",
+                "KCAL": "130"
+            }
+        ]
+    },
+    {
+        "tableau": 11,
+        "en_tetes": [
+            "100g de LÉGUMES",
+            "KCAL"
+        ],
+        "lignes": [
+            [
+                "Pour 100g",
+                "KCAL"
+            ],
+            [
+                "Carottes râpées vinaigrette",
+                "130"
+            ],
+            [
+                "Cassoulet",
+                "180"
+            ],
+            [
+                "Céleri rémoulade",
+                "100"
+            ],
+            [
+                "Champignon à la grecque",
+                "90"
+            ],
+            [
+                "Choucroute garnie",
+                "170"
+            ],
+            [
+                "Couscous aux légumes",
+                "100"
+            ],
+            [
+                "Endives au jambon",
+                "120"
+            ],
+            [
+                "Paella",
+                "180"
+            ],
+            [
+                "Poulet basquaise",
+                "150"
+            ],
+            [
+                "Ratatouille niçoise",
+                "100"
+            ],
+            [
+                "Soupe à la tomate",
+                "30"
+            ],
+            [
+                "Soupe aux légumes verts",
+                "25"
+            ],
+            [
+                "Soupe de poisson",
+                "30"
+            ],
+            [
+                "Taboulé",
+                "150"
+            ],
+            [
+                "Tomate farcie",
+                "120"
+            ]
+        ],
+        "dataframe": [
+            {
+                "100g de LÉGUMES": "Pour 100g",
+                "KCAL": "KCAL"
+            },
+            {
+                "100g de LÉGUMES": "Carottes râpées vinaigrette",
+                "KCAL": "130"
+            },
+            {
+                "100g de LÉGUMES": "Cassoulet",
+                "KCAL": "180"
+            },
+            {
+                "100g de LÉGUMES": "Céleri rémoulade",
+                "KCAL": "100"
+            },
+            {
+                "100g de LÉGUMES": "Champignon à la grecque",
+                "KCAL": "90"
+            },
+            {
+                "100g de LÉGUMES": "Choucroute garnie",
+                "KCAL": "170"
+            },
+            {
+                "100g de LÉGUMES": "Couscous aux légumes",
+                "KCAL": "100"
+            },
+            {
+                "100g de LÉGUMES": "Endives au jambon",
+                "KCAL": "120"
+            },
+            {
+                "100g de LÉGUMES": "Paella",
+                "KCAL": "180"
+            },
+            {
+                "100g de LÉGUMES": "Poulet basquaise",
+                "KCAL": "150"
+            },
+            {
+                "100g de LÉGUMES": "Ratatouille niçoise",
+                "KCAL": "100"
+            },
+            {
+                "100g de LÉGUMES": "Soupe à la tomate",
+                "KCAL": "30"
+            },
+            {
+                "100g de LÉGUMES": "Soupe aux légumes verts",
+                "KCAL": "25"
+            },
+            {
+                "100g de LÉGUMES": "Soupe de poisson",
+                "KCAL": "30"
+            },
+            {
+                "100g de LÉGUMES": "Taboulé",
+                "KCAL": "150"
+            },
+            {
+                "100g de LÉGUMES": "Tomate farcie",
+                "KCAL": "120"
+            }
+        ]
+    },
+    {
+        "tableau": 12,
+        "en_tetes": [
+            "100g de LÉGUMES",
+            "KCAL"
+        ],
+        "lignes": [
+            [
+                "Pour 100g",
+                "KCAL"
+            ],
+            [
+                "Ketchup",
+                "110"
+            ],
+            [
+                "Mayonnaise",
+                "680"
+            ],
+            [
+                "Moutarde",
+                "100"
+            ],
+            [
+                "Sauce bolognaise",
+                "120"
+            ]
+        ],
+        "dataframe": [
+            {
+                "100g de LÉGUMES": "Pour 100g",
+                "KCAL": "KCAL"
+            },
+            {
+                "100g de LÉGUMES": "Ketchup",
+                "KCAL": "110"
+            },
+            {
+                "100g de LÉGUMES": "Mayonnaise",
+                "KCAL": "680"
+            },
+            {
+                "100g de LÉGUMES": "Moutarde",
+                "KCAL": "100"
+            },
+            {
+                "100g de LÉGUMES": "Sauce bolognaise",
+                "KCAL": "120"
+            }
+        ]
+    },
+    {
+        "tableau": 13,
+        "en_tetes": [
+            "100g de LÉGUMES",
+            "KCAL"
+        ],
+        "lignes": [
+            [
+                "Pour 100g",
+                "KCAL"
+            ],
+            [
+                "Biscuits pomme Regain",
+                "470"
+            ],
+            [
+                "Biscuits",
+                "400"
+            ],
+            [
+                "Boudoir",
+                "388"
+            ],
+            [
+                "Boudoirs",
+                "388"
+            ],
+            [
+                "Brioche",
+                "386"
+            ],
+            [
+                "Chausson (unité)",
+                "300"
+            ],
+            [
+                "Clafoutis (1 part)",
+                "270"
+            ],
+            [
+                "Compote de pomme sans sucre ajouté",
+                "45"
+            ],
+            [
+                "Congolais (unité)",
+                "130"
+            ],
+            [
+                "Cookies",
+                "464"
+            ],
+            [
+                "Crakers",
+                "360"
+            ],
+            [
+                "Craquelin (unité)",
+                "100"
+            ],
+            [
+                "Crème chantilly",
+                "288"
+            ],
+            [
+                "Crème glacée chocolat",
+                "235"
+            ],
+            [
+                "Crème glacée fraises",
+                "192"
+            ],
+            [
+                "Crème glacée pistache",
+                "451"
+            ],
+            [
+                "Crème glacée vanille",
+                "165"
+            ],
+            [
+                "Crêpe nature (unité)",
+                "40"
+            ],
+            [
+                "Crêpe nature",
+                "227"
+            ],
+            [
+                "Crêpes orientales",
+                "345"
+            ],
+            [
+                "Croissant (unité)",
+                "180"
+            ],
+            [
+                "Croquants (unité)",
+                "218"
+            ],
+            [
+                "Eclair au chocolat",
+                "262"
+            ],
+            [
+                "Fondants",
+                "380"
+            ],
+            [
+                "Gâteau au chocolat",
+                "360"
+            ],
+            [
+                "Gâteaux secs",
+                "420"
+            ],
+            [
+                "Gaufre nature",
+                "291"
+            ],
+            [
+                "Gaufres",
+                "400"
+            ],
+            [
+                "Gaufrettes fourrées",
+                "523"
+            ],
+            [
+                "Gaufrettes",
+                "368"
+            ],
+            [
+                "Macaron (unité)",
+                "120"
+            ],
+            [
+                "Macarons",
+                "452"
+            ],
+            [
+                "Madeleine (unité)",
+                "95"
+            ],
+            [
+                "Madeleines",
+                "490"
+            ],
+            [
+                "Millefeuille (unité)",
+                "320"
+            ],
+            [
+                "Muffins (unité)",
+                "150"
+            ],
+            [
+                "Pain au chocolat (unité)",
+                "280"
+            ],
+            [
+                "Pain au lait (unité)",
+                "120"
+            ],
+            [
+                "Pain au raisin (unité)",
+                "270"
+            ],
+            [
+                "Petitbeurre (unité)",
+                "35"
+            ],
+            [
+                "Petitbeurre",
+                "420"
+            ],
+            [
+                "Pudding (1 part)",
+                "360"
+            ],
+            [
+                "Quatrequarts",
+                "400"
+            ],
+            [
+                "Sablés",
+                "460"
+            ],
+            [
+                "Sorbet",
+                "90"
+            ],
+            [
+                "Tarte (pommes)",
+                "300"
+            ]
+        ],
+        "dataframe": [
+            {
+                "100g de LÉGUMES": "Pour 100g",
+                "KCAL": "KCAL"
+            },
+            {
+                "100g de LÉGUMES": "Biscuits pomme Regain",
+                "KCAL": "470"
+            },
+            {
+                "100g de LÉGUMES": "Biscuits",
+                "KCAL": "400"
+            },
+            {
+                "100g de LÉGUMES": "Boudoir",
+                "KCAL": "388"
+            },
+            {
+                "100g de LÉGUMES": "Boudoirs",
+                "KCAL": "388"
+            },
+            {
+                "100g de LÉGUMES": "Brioche",
+                "KCAL": "386"
+            },
+            {
+                "100g de LÉGUMES": "Chausson (unité)",
+                "KCAL": "300"
+            },
+            {
+                "100g de LÉGUMES": "Clafoutis (1 part)",
+                "KCAL": "270"
+            },
+            {
+                "100g de LÉGUMES": "Compote de pomme sans sucre ajouté",
+                "KCAL": "45"
+            },
+            {
+                "100g de LÉGUMES": "Congolais (unité)",
+                "KCAL": "130"
+            },
+            {
+                "100g de LÉGUMES": "Cookies",
+                "KCAL": "464"
+            },
+            {
+                "100g de LÉGUMES": "Crakers",
+                "KCAL": "360"
+            },
+            {
+                "100g de LÉGUMES": "Craquelin (unité)",
+                "KCAL": "100"
+            },
+            {
+                "100g de LÉGUMES": "Crème chantilly",
+                "KCAL": "288"
+            },
+            {
+                "100g de LÉGUMES": "Crème glacée chocolat",
+                "KCAL": "235"
+            },
+            {
+                "100g de LÉGUMES": "Crème glacée fraises",
+                "KCAL": "192"
+            },
+            {
+                "100g de LÉGUMES": "Crème glacée pistache",
+                "KCAL": "451"
+            },
+            {
+                "100g de LÉGUMES": "Crème glacée vanille",
+                "KCAL": "165"
+            },
+            {
+                "100g de LÉGUMES": "Crêpe nature (unité)",
+                "KCAL": "40"
+            },
+            {
+                "100g de LÉGUMES": "Crêpe nature",
+                "KCAL": "227"
+            },
+            {
+                "100g de LÉGUMES": "Crêpes orientales",
+                "KCAL": "345"
+            },
+            {
+                "100g de LÉGUMES": "Croissant (unité)",
+                "KCAL": "180"
+            },
+            {
+                "100g de LÉGUMES": "Croquants (unité)",
+                "KCAL": "218"
+            },
+            {
+                "100g de LÉGUMES": "Eclair au chocolat",
+                "KCAL": "262"
+            },
+            {
+                "100g de LÉGUMES": "Fondants",
+                "KCAL": "380"
+            },
+            {
+                "100g de LÉGUMES": "Gâteau au chocolat",
+                "KCAL": "360"
+            },
+            {
+                "100g de LÉGUMES": "Gâteaux secs",
+                "KCAL": "420"
+            },
+            {
+                "100g de LÉGUMES": "Gaufre nature",
+                "KCAL": "291"
+            },
+            {
+                "100g de LÉGUMES": "Gaufres",
+                "KCAL": "400"
+            },
+            {
+                "100g de LÉGUMES": "Gaufrettes fourrées",
+                "KCAL": "523"
+            },
+            {
+                "100g de LÉGUMES": "Gaufrettes",
+                "KCAL": "368"
+            },
+            {
+                "100g de LÉGUMES": "Macaron (unité)",
+                "KCAL": "120"
+            },
+            {
+                "100g de LÉGUMES": "Macarons",
+                "KCAL": "452"
+            },
+            {
+                "100g de LÉGUMES": "Madeleine (unité)",
+                "KCAL": "95"
+            },
+            {
+                "100g de LÉGUMES": "Madeleines",
+                "KCAL": "490"
+            },
+            {
+                "100g de LÉGUMES": "Millefeuille (unité)",
+                "KCAL": "320"
+            },
+            {
+                "100g de LÉGUMES": "Muffins (unité)",
+                "KCAL": "150"
+            },
+            {
+                "100g de LÉGUMES": "Pain au chocolat (unité)",
+                "KCAL": "280"
+            },
+            {
+                "100g de LÉGUMES": "Pain au lait (unité)",
+                "KCAL": "120"
+            },
+            {
+                "100g de LÉGUMES": "Pain au raisin (unité)",
+                "KCAL": "270"
+            },
+            {
+                "100g de LÉGUMES": "Petitbeurre (unité)",
+                "KCAL": "35"
+            },
+            {
+                "100g de LÉGUMES": "Petitbeurre",
+                "KCAL": "420"
+            },
+            {
+                "100g de LÉGUMES": "Pudding (1 part)",
+                "KCAL": "360"
+            },
+            {
+                "100g de LÉGUMES": "Quatrequarts",
+                "KCAL": "400"
+            },
+            {
+                "100g de LÉGUMES": "Sablés",
+                "KCAL": "460"
+            },
+            {
+                "100g de LÉGUMES": "Sorbet",
+                "KCAL": "90"
+            },
+            {
+                "100g de LÉGUMES": "Tarte (pommes)",
+                "KCAL": "300"
+            }
+        ]
+    },
+    {
+        "tableau": 14,
+        "en_tetes": [
+            "100g de LÉGUMES",
+            "KCAL"
+        ],
+        "lignes": [
+            [
+                "CONFISERIES",
+                "KCAL"
+            ],
+            [
+                "Barre céréales et chocolat taillefine",
+                "79"
+            ],
+            [
+                "Barre Kit Kat",
+                "518"
+            ],
+            [
+                "Barre Mars",
+                "423"
+            ],
+            [
+                "Barre Muesli",
+                "531"
+            ],
+            [
+                "Barre Snickers",
+                "467"
+            ],
+            [
+                "Barre Twix",
+                "499"
+            ],
+            [
+                "Bonbons M&M’S",
+                "526"
+            ],
+            [
+                "Cassonade",
+                "380"
+            ],
+            [
+                "Chocolat au lait",
+                "550"
+            ],
+            [
+                "Chocolat blanc",
+                "570"
+            ],
+            [
+                "Chocolat noir",
+                "520"
+            ],
+            [
+                "Confits abricots",
+                "338"
+            ],
+            [
+                "Confits ananas",
+                "316"
+            ],
+            [
+                "Croissant beurre",
+                "406"
+            ],
+            [
+                "Massepain",
+                "550"
+            ],
+            [
+                "Ferrero Rocher",
+                "560"
+            ],
+            [
+                "Miel",
+                "304"
+            ],
+            [
+                "Gingembre confit",
+                "351"
+            ],
+            [
+                "Nutella",
+                "530"
+            ],
+            [
+                "Pain au chocolat",
+                "410"
+            ],
+            [
+                "Pain d’épice",
+                "356"
+            ],
+            [
+                "Pâte de fruit",
+                "217"
+            ],
+            [
+                "Petit Ecolier",
+                "495"
+            ],
+            [
+                "Pop corn",
+                "382"
+            ],
+            [
+                "Réglisse",
+                "377"
+            ],
+            [
+                "Sirop d’agave",
+                "376"
+            ],
+            [
+                "Sucre",
+                "396"
+            ],
+            [
+                "Sucre canne",
+                "396"
+            ],
+            [
+                "Sucre glace",
+                "399"
+            ],
+            [
+                "Sucre roux",
+                "390"
+            ],
+            [
+                "Sucre vanillé",
+                "396"
+            ]
+        ],
+        "dataframe": [
+            {
+                "100g de LÉGUMES": "CONFISERIES",
+                "KCAL": "KCAL"
+            },
+            {
+                "100g de LÉGUMES": "Barre céréales et chocolat taillefine",
+                "KCAL": "79"
+            },
+            {
+                "100g de LÉGUMES": "Barre Kit Kat",
+                "KCAL": "518"
+            },
+            {
+                "100g de LÉGUMES": "Barre Mars",
+                "KCAL": "423"
+            },
+            {
+                "100g de LÉGUMES": "Barre Muesli",
+                "KCAL": "531"
+            },
+            {
+                "100g de LÉGUMES": "Barre Snickers",
+                "KCAL": "467"
+            },
+            {
+                "100g de LÉGUMES": "Barre Twix",
+                "KCAL": "499"
+            },
+            {
+                "100g de LÉGUMES": "Bonbons M&M’S",
+                "KCAL": "526"
+            },
+            {
+                "100g de LÉGUMES": "Cassonade",
+                "KCAL": "380"
+            },
+            {
+                "100g de LÉGUMES": "Chocolat au lait",
+                "KCAL": "550"
+            },
+            {
+                "100g de LÉGUMES": "Chocolat blanc",
+                "KCAL": "570"
+            },
+            {
+                "100g de LÉGUMES": "Chocolat noir",
+                "KCAL": "520"
+            },
+            {
+                "100g de LÉGUMES": "Confits abricots",
+                "KCAL": "338"
+            },
+            {
+                "100g de LÉGUMES": "Confits ananas",
+                "KCAL": "316"
+            },
+            {
+                "100g de LÉGUMES": "Croissant beurre",
+                "KCAL": "406"
+            },
+            {
+                "100g de LÉGUMES": "Massepain",
+                "KCAL": "550"
+            },
+            {
+                "100g de LÉGUMES": "Ferrero Rocher",
+                "KCAL": "560"
+            },
+            {
+                "100g de LÉGUMES": "Miel",
+                "KCAL": "304"
+            },
+            {
+                "100g de LÉGUMES": "Gingembre confit",
+                "KCAL": "351"
+            },
+            {
+                "100g de LÉGUMES": "Nutella",
+                "KCAL": "530"
+            },
+            {
+                "100g de LÉGUMES": "Pain au chocolat",
+                "KCAL": "410"
+            },
+            {
+                "100g de LÉGUMES": "Pain d’épice",
+                "KCAL": "356"
+            },
+            {
+                "100g de LÉGUMES": "Pâte de fruit",
+                "KCAL": "217"
+            },
+            {
+                "100g de LÉGUMES": "Petit Ecolier",
+                "KCAL": "495"
+            },
+            {
+                "100g de LÉGUMES": "Pop corn",
+                "KCAL": "382"
+            },
+            {
+                "100g de LÉGUMES": "Réglisse",
+                "KCAL": "377"
+            },
+            {
+                "100g de LÉGUMES": "Sirop d’agave",
+                "KCAL": "376"
+            },
+            {
+                "100g de LÉGUMES": "Sucre",
+                "KCAL": "396"
+            },
+            {
+                "100g de LÉGUMES": "Sucre canne",
+                "KCAL": "396"
+            },
+            {
+                "100g de LÉGUMES": "Sucre glace",
+                "KCAL": "399"
+            },
+            {
+                "100g de LÉGUMES": "Sucre roux",
+                "KCAL": "390"
+            },
+            {
+                "100g de LÉGUMES": "Sucre vanillé",
+                "KCAL": "396"
+            }
+        ]
+    }
+]
