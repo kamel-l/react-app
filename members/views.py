@@ -41,7 +41,6 @@ def login_view(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            messages.success(request, 'Connexion réussie!')
             return redirect('RecipesListsViews')
         else:
             messages.error(request, 'Identifiants invalides.')
@@ -51,7 +50,6 @@ def login_view(request):
 
 def logout_view(request):
     logout(request)
-    messages.info(request, 'Vous avez été déconnecté.')
     return redirect('home')
 
 

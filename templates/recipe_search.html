@@ -158,7 +158,6 @@
                                 <div class="missed-ingredients">
                                     <h6>Missing Ingredients:</h6>
                                     <ul>
-                                     <img src="${ingredient.image}" class="recipe-image" alt="${ingredient.name}">
                                         ${recipe.missedIngredients.map(ingredient => `
                                             <li>${ingredient.original}</li>
                                         `).join('')}
@@ -167,7 +166,7 @@
     
                                 <div class="recipe-meta">
                                     <small class="text-muted">
-                                        <i class="bi bi-clock"></i> ${recipe.prep_time || 'pas de prep_times'} min prep | ${recipe.cook_time || 'N/A'} min cook
+                                        <i class="bi bi-clock"></i> ${recipe.prep_time || 'N/A'} min prep | ${recipe.cook_time || 'N/A'} min cook
                                     </small>
                                 </div>
                                 <div class="recipe-actions">
@@ -181,6 +180,7 @@
             })
             .catch(error => {
                 console.error('Error:', error);
+                document.getElementById('recipe-results').innerHTML = '<p>Une erreur est survenue lors de la recherche de recettes.</p>';
             });
     });
 
